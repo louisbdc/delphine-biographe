@@ -43,8 +43,8 @@ export default function Comment() {
             <span className="text-gold font-bold tracking-widest uppercase text-sm mb-6 block fade-in">
               Méthodologie
             </span>
-            <h1 className="text-5xl md:text-7xl font-serif text-navy mb-8 leading-tight fade-in">
-              Comment cela se passe-t-il ?
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-navy mb-8 leading-tight fade-in whitespace-nowrap">
+              Comment cela se passe&nbsp;-&nbsp;t-il&nbsp;?
             </h1>
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
             <p className="text-lg text-navy-light leading-relaxed max-w-3xl mx-auto">

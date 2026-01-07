@@ -78,7 +78,6 @@ export default function Combien() {
                 <h3 className="text-2xl font-serif mb-2 text-cream">Le tarif à la séance</h3>
                 <div className="flex justify-center items-baseline gap-2 my-6">
                   <span className="text-6xl font-bold font-serif">440€</span>
-                  <span className="text-xl text-white/60">/ unité</span>
                 </div>
                 
                 <div className="w-full h-px bg-white/20 my-6"></div>
