@@ -1,7 +1,23 @@
 import type { Metadata } from "next";
+import { Lato, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import AccessibilityControls from "@/components/AccessibilityControls";
 import Footer from "@/components/Footer";
+
+const lato = Lato({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "optional",
+  variable: "--font-lato",
+});
+
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "optional",
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   title: "Delphine de Lapeyrière | Biographe Familiale",
@@ -19,21 +35,16 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
-        {/* Google Fonts: Playfair Display (Serif) & Lato (Sans) */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet"
-        />
+        {/* Preload critical logo */}
+        <link rel="preload" href="/logo.png" as="image" />
         {/* Material Symbols for Icons */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional"
         />
       </head>
       <body
-        className="font-sans antialiased text-navy overflow-x-hidden flex flex-col min-h-screen"
+        className={`${lato.variable} ${playfairDisplay.variable} font-sans antialiased text-navy overflow-x-hidden flex flex-col min-h-screen`}
       >
         {/* Accessibility & Top Bar */}
         <div className="bg-navy text-cream py-2 px-4 flex justify-between items-center text-sm md:text-base">

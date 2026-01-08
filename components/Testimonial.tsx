@@ -69,9 +69,10 @@ export default function Testimonial() {
         <Image
           src="/stylo_placeholder.png"
           alt=""
-          width={400}
-          height={400}
+          width={800}
+          height={800}
           className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] object-contain"
+          unoptimized
         />
       </div>
 

@@ -18,8 +18,8 @@ const config: Config = {
         'old-rose': '#B76E79',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['"Lato"', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'serif'],
+        sans: ['var(--font-lato)', 'sans-serif'],
       },
       fontSize: {
         'base-lg': '1.125rem', /* 18px minimum for body */

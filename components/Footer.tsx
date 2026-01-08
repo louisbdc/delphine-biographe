@@ -12,6 +12,10 @@ export default function Footer() {
                 src="/logo.png"
                 alt="Delphine de Lapeyrière - Biographe"
                 className="h-12 md:h-16 w-auto"
+                loading="eager"
+                fetchPriority="high"
+                decoding="sync"
+                style={{ display: 'block' }}
               />
               <span className="text-xl md:text-2xl font-serif font-bold text-cream">
                 Delphine, biographe

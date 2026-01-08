@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 
 export type TimelineItem = {
   title: string;
@@ -108,10 +109,13 @@ export default function Timeline({ items }: TimelineProps) {
                 </h4>
                 {step.image ? (
                   <div className="mt-6">
-                    <img
+                    <Image
                       src={step.image}
                       alt={step.title}
+                      width={1200}
+                      height={900}
                       className="w-full rounded-2xl shadow-lg object-cover"
+                      unoptimized
                     />
                   </div>
                 ) : null}

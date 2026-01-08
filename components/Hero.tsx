@@ -12,7 +12,7 @@ export default function Hero() {
           src="/background.png"
           alt="Mains écrivant dans un journal"
           fill
-          className="object-cover object-right"
+          className="object-cover object-[50%_center] md:object-right"
           priority
         />
       </div>
