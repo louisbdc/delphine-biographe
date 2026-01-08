@@ -37,10 +37,6 @@ export default function Navigation() {
               src="/logo.png"
               alt="Delphine de Lapeyrière - Biographe"
               className="h-12 md:h-16 w-auto"
-              loading="eager"
-              fetchPriority="high"
-              decoding="sync"
-              style={{ display: 'block', minWidth: '48px', minHeight: '48px' }}
             />
             <span className="text-xl md:text-3xl font-serif font-bold text-navy">
               Delphine, biographe
@@ -113,10 +109,6 @@ export default function Navigation() {
                 src="/logo.png"
                 alt="Delphine de Lapeyrière - Biographe"
                 className="h-12 w-auto"
-                loading="eager"
-                fetchPriority="high"
-                decoding="sync"
-                style={{ display: 'block', minWidth: '48px', minHeight: '48px' }}
               />
               <span className="text-xl font-serif font-bold text-navy">
                 Delphine, biographe

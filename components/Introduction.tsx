@@ -11,11 +11,9 @@ export default function Introduction() {
             <Image
               src="/fauteuil.png"
               alt="Bibliothèque chaleureuse"
-              width={1200}
-              height={900}
+              width={800}
+              height={600}
               className="relative z-10 rounded-2xl shadow-2xl w-full"
-              priority
-              unoptimized
             />
           </div>
 
