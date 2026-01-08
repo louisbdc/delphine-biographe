@@ -106,7 +106,7 @@ export default function PourQuoi() {
               <div className="text-lg md:text-xl text-navy-light leading-relaxed space-y-6 text-justify md:text-left">
                 <p>
                   <span className="text-5xl text-sage font-serif float-left mr-3 mt-[-12px] opacity-20">C</span>
-                  <span className="font-bold text-navy">C</span>haque vie mérite d&apos;être racontée et j&apos;ai la conviction que pour bien avancer dans la vie, il faut savoir d&apos;où l&apos;on vient.
+                  <span className="text-navy">haque vie mérite d&apos;être racontée et j&apos;ai la conviction que pour bien avancer dans la vie, il faut savoir d&apos;où l&apos;on vient.</span>
                 </p>
                 <p>
                   Qui mieux que vous peut raconter votre vie, vos joies, vos souffrances, vos doutes, vos réussites ?
