@@ -9,7 +9,7 @@ export default function Introduction() {
           <div className="order-2 md:order-1 relative">
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold rounded-2xl z-0"></div>
             <Image
-              src="/fauteuil.png"
+              src="/delphine_first_page.jpg"
               alt="Bibliothèque chaleureuse"
               width={800}
               height={600}

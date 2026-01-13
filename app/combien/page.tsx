@@ -75,9 +75,9 @@ export default function Combien() {
             <div className="relative">
               <div className="absolute inset-0 bg-gold blur-2xl opacity-20 rounded-full"></div>
               <div className="relative bg-navy text-white p-10 rounded-3xl shadow-2xl text-center border border-white/10">
-                <h3 className="text-2xl font-serif mb-2 text-cream">Le tarif à la séance</h3>
+                <h3 className="text-2xl font-serif mb-2 text-cream">Le tarif horaire</h3>
                 <div className="flex justify-center items-baseline gap-2 my-6">
-                  <span className="text-6xl font-bold font-serif">440€</span>
+                  <span className="text-6xl font-bold font-serif">55€ / heure</span>
                 </div>
                 
                 <div className="w-full h-px bg-white/20 my-6"></div>

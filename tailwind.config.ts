@@ -16,6 +16,7 @@ const config: Config = {
         'sage': '#4F6F52',
         'gold': '#C5A059',
         'old-rose': '#B76E79',
+        'royal-blue': '#4169E1',
       },
       fontFamily: {
         serif: ['"Playfair Display"', 'serif'],

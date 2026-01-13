@@ -9,10 +9,10 @@ export default function Hero() {
       {/* Hero Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/background.png"
+          src="/main.jpeg"
           alt="Mains écrivant dans un journal"
           fill
-          className="object-cover object-[50%_center] md:object-right"
+          className="object-cover object-[80%_center] md:object-[70%_center]"
           priority
         />
       </div>
@@ -24,7 +24,7 @@ export default function Hero() {
           </span>
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-navy mb-6 leading-tight">
             Delphine de Lapeyrière,<br />
-            <span className="text-old-rose italic">biographe.</span>
+            <span className="italic" style={{ color: '#4169E1' }}>biographe.</span>
           </h1>
           <p className="text-2xl md:text-3xl font-serif text-navy-light mb-8 italic border-l-4 border-gold pl-6">
             &quot;Biographe ? Un métier étonnant, n&apos;est-ce pas ?&quot;
