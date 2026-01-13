@@ -25,7 +25,7 @@ export default function QuiSuisJe() {
               </h1>
               <div className="w-24 h-1 bg-gold mb-8"></div>
               <p className="text-2xl md:text-3xl font-serif text-navy mb-6 font-light">
-                Je m&apos;appelle <span className="font-bold text-old-rose italic">Delphine de Lapeyrière</span>.
+                Je m&apos;appelle <span className="font-bold italic" style={{ color: '#4169E1' }}>Delphine de Lapeyrière</span>.
               </p>
               <p className="text-lg text-navy-light leading-relaxed max-w-2xl">
                  Une passionnée des mots et des histoires de vie, prête à écouter la vôtre avec bienveillance et sensibilité.

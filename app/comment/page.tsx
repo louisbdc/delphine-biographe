@@ -47,9 +47,6 @@ export default function Comment() {
               Comment cela se passe&nbsp;-&nbsp;t-il&nbsp;?
             </h1>
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
-            <p className="text-lg text-navy-light leading-relaxed max-w-3xl mx-auto">
-              Une méthodologie douce, basée sur l&apos;écoute et des entretiens réguliers à votre rythme.
-            </p>
           </div>
         </div>
       </section>
