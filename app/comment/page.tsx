@@ -122,8 +122,7 @@ export default function Comment() {
                 </h3>
               </div>
               <p className="text-lg text-navy-light">
-                Une fois que vous avez validé votre récit, choisi les photos, trouvé un titre... j&apos;envoie le fichier 
-                à un imprimeur qui imprime tout d&apos;abord un <strong>bon à tirer</strong>. Vous n&apos;avez plus qu&apos;à passer 
+                Après l&apos;avoir relu et apporté d&apos;éventuelles corrections, vous n&apos;aurez plus qu&apos;à passer 
                 commande du nombre d&apos;exemplaires que vous souhaitez.
               </p>
             </div>
