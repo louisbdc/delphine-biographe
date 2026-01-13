@@ -226,10 +226,10 @@ export default function Combien() {
               Me contacter
             </a>
             <a
-              href="tel:+33600000000"
+              href="tel:+33619426686"
               className="px-8 py-4 rounded-full border border-white/30 text-white font-medium hover:bg-white/10 transition-all duration-300"
             >
-              06 00 00 00 00
+              06 19 42 66 86
             </a>
           </div>
         </div>

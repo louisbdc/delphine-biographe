@@ -29,10 +29,10 @@ export default function MentionsLegales() {
                 <p>
                   <strong>Email :</strong>{" "}
                   <a
-                    href="mailto:contact@biographedelphine.com"
+                    href="mailto:delphine.biographe@gmail.com"
                     className="text-sage hover:text-gold transition-colors underline-offset-4 hover:underline"
                   >
-                    contact@biographedelphine.com
+                    delphine.biographe@gmail.com
                   </a>
                 </p>
                 <p>
@@ -92,10 +92,10 @@ export default function MentionsLegales() {
                 Pour exercer ces droits, vous pouvez nous contacter à l&apos;adresse
                 suivante :{" "}
                 <a
-                  href="mailto:contact@biographedelphine.com"
+                  href="mailto:delphine.biographe@gmail.com"
                   className="text-sage hover:text-gold transition-colors underline-offset-4 hover:underline"
                 >
-                  contact@biographedelphine.com
+                  delphine.biographe@gmail.com
                 </a>
               </p>
             </section>
@@ -152,10 +152,10 @@ export default function MentionsLegales() {
                 Pour toute question concernant ces mentions légales, vous pouvez
                 nous contacter à l&apos;adresse :{" "}
                 <a
-                  href="mailto:contact@biographedelphine.com"
+                  href="mailto:delphine.biographe@gmail.com"
                   className="text-sage hover:text-gold transition-colors underline-offset-4 hover:underline"
                 >
-                  contact@biographedelphine.com
+                  delphine.biographe@gmail.com
                 </a>
               </p>
             </section>

@@ -35,8 +35,8 @@ export default function Contact() {
                   <p className="flex items-center gap-3 text-gold text-xs font-bold tracking-widest uppercase mb-2">
                     <Mail className="w-4 h-4" /> Email
                   </p>
-                  <a href="mailto:contact@biographedelphine.com" className="text-white/90 font-light text-lg hover:text-gold transition-colors">
-                    contact@biographedelphine.com
+                  <a href="mailto:delphine.biographe@gmail.com" className="text-white/90 font-light text-lg hover:text-gold transition-colors">
+                    delphine.biographe@gmail.com
                   </a>
                 </div>
 
