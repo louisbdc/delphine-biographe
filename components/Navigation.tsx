@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,9 +35,11 @@ export default function Navigation() {
             className="hover:opacity-80 transition-opacity flex items-center gap-3"
             onClick={closeMenu}
           >
-            <img
+            <Image
               src="/logo.png"
               alt="Delphine de Lapeyrière - Biographe"
+              width={1024}
+              height={1024}
               className="h-12 md:h-16 w-auto"
             />
             <span className="text-xl md:text-3xl font-serif font-bold text-navy">
@@ -105,9 +108,11 @@ export default function Navigation() {
               className="flex items-center gap-3 hover:opacity-80 transition-opacity"
               onClick={closeMenu}
             >
-              <img
+              <Image
                 src="/logo.png"
                 alt="Delphine de Lapeyrière - Biographe"
+                width={1024}
+                height={1024}
                 className="h-12 w-auto"
               />
               <span className="text-xl font-serif font-bold text-navy">

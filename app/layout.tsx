@@ -40,9 +40,10 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth">
       <head>
         {/* Material Symbols for Icons */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=optional"
         />
       </head>
       <body

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useEffect, useMemo, useRef, useState } from "react";
 
 export type TimelineItem = {
@@ -9,6 +11,8 @@ export type TimelineItem = {
   body?: string;
   reverse?: boolean;
   image?: string;
+  width?: number;
+  height?: number;
 };
 
 type TimelineProps = {
@@ -94,24 +98,24 @@ export default function Timeline({ items }: TimelineProps) {
               className="grid grid-cols-[2.5rem_minmax(0,1fr)] items-start gap-x-4 gap-y-6 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-x-16"
             >
               {/* Title - Left by default, Right when reversed */}
-              <div className={`col-start-2 text-left md:pl-0 md:row-start-1 ${
-                isReversed 
-                  ? "md:col-start-3 md:text-left" 
+              <div className={`col-start-2 text-left md:pl-0 md:row-start-1 ${isReversed
+                  ? "md:col-start-3 md:text-left"
                   : "md:col-start-1 md:text-right"
-              }`}>
+                }`}>
                 <h4
-                  className={`text-lg md:text-xl font-serif font-semibold uppercase tracking-[0.18em] ${
-                    isActive ? "text-gold" : "text-navy-light"
-                  }`}
+                  className={`text-lg md:text-xl font-serif font-semibold uppercase tracking-[0.18em] ${isActive ? "text-gold" : "text-navy-light"
+                    }`}
                 >
                   {step.title}
                 </h4>
                 {step.image ? (
                   <div className="mt-6">
-                    <img
+                    <Image
                       src={step.image}
                       alt={step.title}
-                      className="w-full rounded-2xl shadow-lg object-cover"
+                      width={step.width || 800}
+                      height={step.height || 600}
+                      className="w-full rounded-2xl shadow-lg h-auto"
                     />
                   </div>
                 ) : null}
@@ -123,32 +127,28 @@ export default function Timeline({ items }: TimelineProps) {
                   ref={(el) => {
                     checkpointRefs.current[index] = el;
                   }}
-                  className={`relative inline-flex h-4 w-4 items-center justify-center rounded-full border-2 ${
-                    isActive
+                  className={`relative inline-flex h-4 w-4 items-center justify-center rounded-full border-2 ${isActive
                       ? "border-gold bg-cream"
                       : "border-navy/40 bg-cream-dark"
-                  }`}
+                    }`}
                 >
                   <span
-                    className={`block h-2 w-2 rounded-full ${
-                      isActive ? "bg-gold" : "bg-navy/40"
-                    }`}
+                    className={`block h-2 w-2 rounded-full ${isActive ? "bg-gold" : "bg-navy/40"
+                      }`}
                   />
                 </span>
               </div>
 
               {/* Content - Right by default, Left when reversed */}
-              <div className={`col-start-2 row-start-2 md:row-start-1 ${
-                isReversed 
-                  ? "md:col-start-1 md:text-right" 
+              <div className={`col-start-2 row-start-2 md:row-start-1 ${isReversed
+                  ? "md:col-start-1 md:text-right"
                   : "md:col-start-3"
-              }`}>
+                }`}>
                 <div className="rounded-3xl border border-navy/20 bg-cream p-6 shadow-lg backdrop-blur">
                   {step.tag ? (
                     <div
-                      className={`text-sm md:text-base uppercase tracking-[0.2em] ${
-                        isActive ? "text-gold" : "text-navy-light"
-                      }`}
+                      className={`text-sm md:text-base uppercase tracking-[0.2em] ${isActive ? "text-gold" : "text-navy-light"
+                        }`}
                     >
                       {step.tag}
                     </div>

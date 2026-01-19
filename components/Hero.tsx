@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Hero Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/hero.JPG"
+          src="/hero.jpg"
           alt="Mains écrivant dans un journal"
           fill
           className="object-cover object-[60%_center] md:object-[70%_center]"

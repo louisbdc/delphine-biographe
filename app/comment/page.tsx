@@ -7,7 +7,9 @@ const timelineSteps = [
     tag: "Faire connaissance",
     headline: "Nous nous rencontrons pour faire connaissance",
     body: "Après un premier contact téléphonique, si vous habitez Paris ou sa proche banlieue, je vous propose une rencontre informelle autour d'un café. Nous faisons connaissance, je réponds à vos éventuelles questions et si vous souhaitez vous lancer dans cette aventure, nous prenons rendez-vous pour le premier entretien. Si vous habitez en dehors de Paris et de sa proche banlieue, la première rencontre pour faire connaissance se passera en visio. Nous aviserons ensemble pour la suite.",
-    image: "/first_contact.JPG",
+    image: "/first_contact2.jpg",
+    width: 6000,
+    height: 4000,
   },
   {
     title: "Les entretiens",
@@ -16,6 +18,8 @@ const timelineSteps = [
     body: "Un entretien dure une heure. Il se passe généralement chez vous, dans un café si vous préférez ou même en visio. Je privilégie la première option. J'arrive avec mes oreilles ouvertes et attentives, un cahier, un stylo et un dictaphone. Je prends tout en note, l'enregistrement me sert de support éventuel pour vérifier un nom, une date. Au cours de ces entretiens vous allez me parler de vous, de vos souvenirs d'enfance, de votre vie de famille, professionnelle, de vos réflexions sur la vie. Je ne vous poserai pas ou peu de questions, c'est vous qui mènerez les entretiens sauf si je sens qu'il faut creuser un peu plus. Vous pourrez agrémenter vos propos de photos que vous aurez choisies en avance et qui vous aideront peut-être à retrouver des souvenirs bien enfouis. Une biographie complète demande de dix à vingt entretiens.",
     reverse: true,
     image: "/entretien.jpg",
+    width: 1280,
+    height: 684,
   },
   {
     title: "Mon travail d'écriture",
@@ -23,6 +27,8 @@ const timelineSteps = [
     headline: "Je transforme vos mots en récit littéraire",
     body: "Après chaque entretien, j'ai, en moyenne, sept heures de travail d'écriture. Je retranscris de façon plus littéraire, je construis un récit vivant tout en gardant votre style, votre ton. C'est votre histoire, elle doit être à votre image, je ne raconterai que ce que vous avez bien voulu me confier. Je vous soumets mes écrits après chaque entretien afin que vous validiez, que vous corrigiez, que vous supprimiez ou rajoutiez des éléments. Nous sommes alors prêts pour l'entretien suivant.",
     image: "/writing_job.jpg",
+    width: 1280,
+    height: 853,
   },
 ];
 
