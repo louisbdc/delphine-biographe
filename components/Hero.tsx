@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Hero Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/main.jpeg"
+          src="/hero.JPG"
           alt="Mains écrivant dans un journal"
           fill
           className="object-cover object-[80%_center] md:object-[70%_center]"
@@ -22,7 +22,7 @@ export default function Hero() {
           <span className="inline-block py-1 px-3 border border-navy rounded-full text-sm font-bold tracking-widest text-navy mb-4 bg-white/50 backdrop-blur">
             BIOGRAPHE FAMILIALE
           </span>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-navy mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-dancing font-bold text-navy mb-6 leading-tight">
             Delphine de Lapeyrière,<br />
             <span className="italic" style={{ color: '#4169E1' }}>biographe.</span>
           </h1>
@@ -32,14 +32,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#pour-quoi"
-              className="bg-navy text-white text-xl px-8 py-4 rounded-xl shadow-xl hover:bg-navy-light transition-all text-center flex items-center justify-center gap-2"
+              className="bg-white text-navy text-xl px-8 py-4 rounded-xl shadow-xl hover:bg-gray-50 transition-all text-center flex items-center justify-center gap-2 font-semibold"
             >
               <span className="material-symbols-outlined">auto_stories</span>
               Découvrir ma démarche
             </a>
             <a
               href="#contact"
-              className="bg-white border-2 border-navy text-navy text-xl px-8 py-4 rounded-xl shadow-md hover:bg-gray-50 transition-all text-center"
+              className="bg-navy text-white text-xl px-8 py-4 rounded-xl shadow-md hover:bg-navy-light transition-all text-center flex items-center justify-center"
             >
               Me contacter
             </a>

@@ -7,7 +7,7 @@ const timelineSteps = [
     tag: "Faire connaissance",
     headline: "Nous nous rencontrons pour faire connaissance",
     body: "Après un premier contact téléphonique, si vous habitez Paris ou sa proche banlieue, je vous propose une rencontre informelle autour d'un café. Nous faisons connaissance, je réponds à vos éventuelles questions et si vous souhaitez vous lancer dans cette aventure, nous prenons rendez-vous pour le premier entretien. Si vous habitez en dehors de Paris et de sa proche banlieue, la première rencontre pour faire connaissance se passera en visio. Nous aviserons ensemble pour la suite.",
-    image: "/first_contact.png",
+    image: "/first_contact.JPG",
   },
   {
     title: "Les entretiens",
@@ -30,13 +30,13 @@ export default function Comment() {
   return (
     <>
       <Navigation />
-      
+
       {/* Hero Section : Portrait Élégant */}
       <section className="relative py-24 bg-[#FDFBF7] overflow-hidden">
-         {/* Décoration d'arrière-plan */}
-         <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
-            <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
-         </div>
+        {/* Décoration d'arrière-plan */}
+        <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
+          <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
+        </div>
 
         <div className="container mx-auto px-6 max-w-4xl relative z-10">
           <div className="text-center">
@@ -68,7 +68,7 @@ export default function Comment() {
             {/* Séparateur signature */}
             <div className="w-16 h-0.5 bg-gold/50 mx-auto"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {/* Combien d'entretiens ? */}
             <div className="bg-white p-6 rounded-2xl border-l-4 border-gold shadow-lg">
@@ -106,8 +106,8 @@ export default function Comment() {
                 </h3>
               </div>
               <p className="text-lg text-navy-light">
-                Je suggère un entretien tous les <strong>quinze jours maximum</strong> pour éviter de perdre le fil 
-                de vos souvenirs. Un entretien <strong>hebdomadaire est l&apos;idéal</strong>.
+                Je suggère un entretien tous les <strong>quinze jours maximum</strong> pour éviter de perdre le fil
+                de vos souvenirs.
               </p>
             </div>
 
@@ -122,8 +122,9 @@ export default function Comment() {
                 </h3>
               </div>
               <p className="text-lg text-navy-light">
-                Après l&apos;avoir relu et apporté d&apos;éventuelles corrections, vous n&apos;aurez plus qu&apos;à passer 
-                commande du nombre d&apos;exemplaires que vous souhaitez.
+                Une fois que vous avez validé votre récit, choisi les photos, trouvé un titre... j&apos;envoie le fichier à un imprimeur
+                qui imprime tout d&apos;abord un <strong>bon à tirer</strong>. Après l&apos;avoir relu et apporté d&apos;éventuelles corrections,
+                vous n&apos;aurez plus qu&apos;à passer commande du nombre d&apos;exemplaires que vous souhaitez.
               </p>
             </div>
           </div>
@@ -137,7 +138,7 @@ export default function Comment() {
             Prêt à commencer cette belle aventure ?
           </h2>
           <p className="text-xl mb-8 text-cream">
-            Contactez-moi pour une première discussion sans engagement et découvrons ensemble 
+            Contactez-moi pour une première discussion sans engagement et découvrons ensemble
             comment écrire votre histoire.
           </p>
           <a

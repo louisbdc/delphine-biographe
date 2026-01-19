@@ -19,8 +19,9 @@ const config: Config = {
         'royal-blue': '#4169E1',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['"Lato"', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'serif'],
+        sans: ['var(--font-lato)', 'sans-serif'],
+        dancing: ['var(--font-dancing)', 'cursive'],
       },
       fontSize: {
         'base-lg': '1.125rem', /* 18px minimum for body */

@@ -4,13 +4,13 @@ export default function Combien() {
   return (
     <>
       <Navigation />
-      
+
       {/* Hero Section : Portrait Élégant */}
       <section className="relative py-24 bg-[#FDFBF7] overflow-hidden">
-         {/* Décoration d'arrière-plan */}
-         <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
-            <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
-         </div>
+        {/* Décoration d'arrière-plan */}
+        <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
+          <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
+        </div>
 
         <div className="container mx-auto px-6 max-w-4xl relative z-10">
           <div className="text-center">
@@ -32,7 +32,7 @@ export default function Combien() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            
+
             {/* Colonne Explicative */}
             <div>
               <div className="mb-6">
@@ -44,11 +44,11 @@ export default function Combien() {
                 <div className="w-16 h-0.5 bg-gold/50"></div>
               </div>
               <p className="text-lg text-navy-light mb-6 leading-relaxed">
-                Parce que chaque histoire est unique, il est difficile de fixer un prix global à l&apos;avance. 
-                J&apos;ai donc opté pour une tarification <strong>à la séance</strong>. Cela vous offre une liberté totale : 
+                Parce que chaque histoire est unique, il est difficile de fixer un prix global à l&apos;avance.
+                J&apos;ai donc opté pour une tarification <strong>à la séance</strong>. Cela vous offre une liberté totale :
                 vous maîtrisez votre budget et la longueur de votre récit.
               </p>
-              
+
               <ul className="space-y-6 mt-8">
                 <li className="flex items-start">
                   <span className="flex-shrink-0 w-10 h-10 rounded-full bg-cream-dark flex items-center justify-center text-gold mr-4">
@@ -79,9 +79,9 @@ export default function Combien() {
                 <div className="flex justify-center items-baseline gap-2 my-6">
                   <span className="text-6xl font-bold font-serif">55€ / heure</span>
                 </div>
-                
+
                 <div className="w-full h-px bg-white/20 my-6"></div>
-                
+
                 <p className="text-lg mb-6 font-light">Ce tarif comprend :</p>
                 <ul className="text-left space-y-3 mb-8 px-4">
                   <li className="flex items-center gap-3">
@@ -121,7 +121,7 @@ export default function Combien() {
             {/* Scénario 1 */}
             <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-sage mb-4 font-bold tracking-wide uppercase text-sm">Option Légère</div>
-              <h3 className="text-2xl font-serif text-navy mb-4">Le Récit Ciblé</h3>
+              <h3 className="text-2xl font-serif text-navy mb-4">Le récit ciblé</h3>
               <p className="text-navy-light mb-6 min-h-[3rem]">
                 Idéal pour raconter une période précise (enfance, guerre, rencontre) ou un événement marquant.
               </p>
@@ -134,8 +134,8 @@ export default function Combien() {
             {/* Scénario 2 */}
             <div className="bg-white p-8 rounded-2xl border-t-4 border-gold shadow-lg transform md:-translate-y-4">
               <div className="text-gold mb-4 font-bold tracking-wide uppercase text-sm">Le Choix Classique</div>
-              <h3 className="text-2xl font-serif text-navy mb-4">La Biographie Complète</h3>
-                <p className="text-navy-light mb-6 min-h-[3rem]">
+              <h3 className="text-2xl font-serif text-navy mb-4">La biographie complète</h3>
+              <p className="text-navy-light mb-6 min-h-[3rem]">
                 Le livre de toute une vie. De votre naissance à aujourd&apos;hui, une œuvre exhaustive et détaillée.
               </p>
               <div className="flex items-baseline gap-2 mb-2">
@@ -155,14 +155,14 @@ export default function Combien() {
             {/* Séparateur signature */}
             <div className="w-16 h-0.5 bg-gold/50 mx-auto"></div>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-12">
             {/* Impression */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                 <div className="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-navy">
-                    <span className="material-symbols-outlined text-2xl">menu_book</span>
-                 </div>
+                <div className="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-navy">
+                  <span className="material-symbols-outlined text-2xl">menu_book</span>
+                </div>
               </div>
               <div>
                 <h3 className="text-xl font-serif text-navy mb-3 font-bold">L&apos;impression des livres</h3>
@@ -188,9 +188,9 @@ export default function Combien() {
             {/* Transport */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                 <div className="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-navy">
-                    <span className="material-symbols-outlined text-2xl">train</span>
-                 </div>
+                <div className="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-navy">
+                  <span className="material-symbols-outlined text-2xl">train</span>
+                </div>
               </div>
               <div>
                 <h3 className="text-xl font-serif text-navy mb-3 font-bold">Déplacements</h3>
@@ -198,7 +198,7 @@ export default function Combien() {
                   Basée près de <strong>Versailles</strong>, je me déplace dans toute la France.
                 </p>
                 <p className="text-navy-light leading-relaxed">
-                  Si vous résidez loin, les frais de transport (train/voiture) et éventuellement d&apos;hébergement seront à votre charge. Nous pouvons aussi alterner avec des séances en visio pour réduire ces coûts.
+                  Si vous résidez en dehors de la région parisienne, les frais de transport (train/voiture) et éventuellement d&apos;hébergement seront à votre charge. Nous pouvons aussi alterner avec des séances en visio pour réduire ces coûts.
                 </p>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function Combien() {
       <section className="py-24 bg-navy relative overflow-hidden">
         {/* Élément décoratif d'arrière-plan */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gold rounded-full mix-blend-overlay filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
-        
+
         <div className="container mx-auto px-6 max-w-3xl text-center relative z-10">
           <h2 className="text-4xl font-serif text-white mb-6">
             Votre histoire mérite d&apos;être racontée

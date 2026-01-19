@@ -1,7 +1,27 @@
 import type { Metadata } from "next";
+import { Playfair_Display, Lato, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import AccessibilityControls from "@/components/AccessibilityControls";
 import Footer from "@/components/Footer";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const lato = Lato({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-lato",
+  display: "swap",
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-dancing",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Delphine de Lapeyrière | Biographe Familiale",
@@ -19,13 +39,6 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
-        {/* Google Fonts: Playfair Display (Serif) & Lato (Sans) */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet"
-        />
         {/* Material Symbols for Icons */}
         <link
           rel="stylesheet"
@@ -33,7 +46,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="font-sans antialiased text-navy overflow-x-hidden flex flex-col min-h-screen"
+        className={`${playfair.variable} ${lato.variable} ${dancingScript.variable} font-sans antialiased text-navy overflow-x-hidden flex flex-col min-h-screen`}
       >
         {/* Accessibility & Top Bar */}
         <div className="bg-navy text-cream py-2 px-4 flex justify-between items-center text-sm md:text-base">
