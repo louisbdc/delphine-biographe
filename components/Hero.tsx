@@ -12,7 +12,7 @@ export default function Hero() {
           src="/hero.JPG"
           alt="Mains écrivant dans un journal"
           fill
-          className="object-cover object-[80%_center] md:object-[70%_center]"
+          className="object-cover object-[60%_center] md:object-[70%_center]"
           priority
         />
       </div>
