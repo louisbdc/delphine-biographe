@@ -21,7 +21,7 @@ const testimonials = [
     id: 3,
     text: "Je suis passionnée par le livre sur la vie de mon beau-frère. J'ai appris plein de choses sur sa petite enfance, son enfance et son adolescence et sa passion pour l'armée… Chaque soir, j'ai hâte de retrouver mon gros livre dans ma chambre. Vous avez vraiment un don exceptionnel pour faire ressurgir les souvenirs.",
     author: "M.D.",
-    role: "Lectrice (fille de l'auteur)"
+    role: "Lectrice"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const testimonials = [
     id: 5,
     text: "Ce fut un véritable honneur de partager avec vous les chapitres de mon parcours. Pouvoir vous confier ces moments de vie et voir votre attention portée à mon récit a été une expérience profondément enrichissante et mémorable.",
     author: "I.D.",
-    role: "Lecteur"
+    role: "Auteur de sa biographie"
   }
 ];
 
