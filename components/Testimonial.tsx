@@ -15,18 +15,24 @@ const testimonials = [
     id: 2,
     text: "Je vous félicite pour votre si belle plume ! J'ai dévoré votre livre. Votre écriture est si fluide et vous rendez les situations extrêmement vivantes. Par ailleurs, j'ai appris beaucoup de choses sur l'enfance de mon frère et de la vie de mes parents…",
     author: "V.",
-    role: "Lectrice (sœur de l'auteur)"
+    role: "Lectrice"
   },
   {
     id: 3,
-    text: "Je suis passionnée par le livre sur la vie de mon père. J'ai appris plein de choses sur sa petite enfance, son enfance et son adolescence et sa passion pour l'armée… Chaque soir, j'ai hâte de retrouver mon gros livre dans ma chambre. Vous avez vraiment un don exceptionnel pour faire ressurgir les souvenirs.",
+    text: "Je suis passionnée par le livre sur la vie de mon beau-frère. J'ai appris plein de choses sur sa petite enfance, son enfance et son adolescence et sa passion pour l'armée… Chaque soir, j'ai hâte de retrouver mon gros livre dans ma chambre. Vous avez vraiment un don exceptionnel pour faire ressurgir les souvenirs.",
     author: "M.D.",
     role: "Lectrice (fille de l'auteur)"
   },
   {
     id: 4,
-    text: "Récit fluide à lire, joyeux mais également profond grâce à une mise en lumière de la personnalité de Y avec beaucoup de justesse.",
+    text: "Récit fluide à lire, joyeux mais également profond grâce à une mise en lumière de la personnalité de A avec beaucoup de justesse.",
     author: "B.",
+    role: "Lecteur"
+  },
+  {
+    id: 5,
+    text: "Ce fut un véritable honneur de partager avec vous les chapitres de mon parcours. Pouvoir vous confier ces moments de vie et voir votre attention portée à mon récit a été une expérience profondément enrichissante et mémorable.",
+    author: "I.D.",
     role: "Lecteur"
   }
 ];
@@ -42,7 +48,7 @@ export default function Testimonial() {
 
   // Fonction pour revenir à la slide précédente
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
@@ -50,7 +56,7 @@ export default function Testimonial() {
   // Rotation automatique (toutes les 12 secondes pour laisser le temps de lire aux seniors)
   useEffect(() => {
     if (isPaused) return;
-    
+
     const interval = setInterval(() => {
       nextSlide();
     }, 12000); // 12 secondes
@@ -59,8 +65,8 @@ export default function Testimonial() {
   }, [isPaused, nextSlide]);
 
   return (
-    <section 
-      id="avis" 
+    <section
+      id="avis"
       className="py-24 bg-navy text-cream relative overflow-hidden"
       aria-label="Témoignages clients"
     >
@@ -76,7 +82,7 @@ export default function Testimonial() {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-5xl">
-        
+
         {/* En-tête de section */}
         <div className="text-center mb-12">
           <span className="text-gold font-bold tracking-widest uppercase text-sm mb-4 block">
@@ -89,7 +95,7 @@ export default function Testimonial() {
         </div>
 
         {/* Zone du slider interactif */}
-        <div 
+        <div
           className="relative bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl backdrop-blur-sm"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
@@ -100,19 +106,18 @@ export default function Testimonial() {
           </div>
 
           {/* Contenu changeant */}
-          <div className="relative min-h-[300px] md:min-h-[250px] flex flex-col justify-center items-center text-center">
+          <div className="relative grid grid-cols-1 place-items-center">
             {testimonials.map((item, index) => (
               <div
                 key={item.id}
-                className={`absolute inset-0 flex flex-col justify-center items-center transition-opacity duration-1000 ease-in-out px-4 md:px-12 ${
-                  index === currentIndex ? "opacity-100 z-10 relative" : "opacity-0 z-0 absolute"
-                }`}
+                className={`col-start-1 row-start-1 w-full flex flex-col justify-center items-center text-center transition-opacity duration-1000 ease-in-out px-4 md:px-12 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+                  }`}
                 aria-hidden={index !== currentIndex}
               >
                 <p className="text-xl md:text-2xl font-serif italic leading-relaxed md:leading-relaxed text-blue-50 mb-8">
                   &quot;{item.text}&quot;
                 </p>
-                
+
                 <div className="mt-4">
                   <p className="text-gold font-bold text-lg tracking-wide">
                     {item.author}
@@ -127,9 +132,9 @@ export default function Testimonial() {
 
           {/* Contrôles de navigation (Pour l'accessibilité et la facilité d'usage) */}
           <div className="flex justify-between items-center mt-8 md:mt-0 md:absolute md:top-1/2 md:-translate-y-1/2 md:w-full md:left-0 md:px-4 pointer-events-none">
-            
+
             {/* Bouton Précédent */}
-            <button 
+            <button
               onClick={prevSlide}
               className="pointer-events-auto w-12 h-12 rounded-full bg-navy/80 hover:bg-gold text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold"
               aria-label="Témoignage précédent"
@@ -139,7 +144,7 @@ export default function Testimonial() {
             </button>
 
             {/* Bouton Suivant */}
-            <button 
+            <button
               onClick={nextSlide}
               className="pointer-events-auto w-12 h-12 rounded-full bg-navy/80 hover:bg-gold text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold"
               aria-label="Témoignage suivant"
@@ -155,22 +160,21 @@ export default function Testimonial() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`h-3 rounded-full transition-all duration-500 ${
-                  index === currentIndex 
-                    ? "w-8 bg-gold" 
-                    : "w-3 bg-white/20 hover:bg-white/40"
-                }`}
+                className={`h-3 rounded-full transition-all duration-500 ${index === currentIndex
+                  ? "w-8 bg-gold"
+                  : "w-3 bg-white/20 hover:bg-white/40"
+                  }`}
                 aria-label={`Aller au témoignage ${index + 1}`}
                 aria-current={index === currentIndex ? "true" : "false"}
               />
             ))}
           </div>
         </div>
-        
+
         <div className="text-center mt-6">
-           <p className="text-sm text-white/40 italic">
-             * Survolez les témoignages pour mettre la lecture en pause.
-           </p>
+          <p className="text-sm text-white/40 italic">
+            * Survolez les témoignages pour mettre la lecture en pause.
+          </p>
         </div>
 
       </div>

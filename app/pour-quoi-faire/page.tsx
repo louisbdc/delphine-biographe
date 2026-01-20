@@ -64,7 +64,7 @@ export default function PourQuoi() {
 
           <p className="text-2xl font-serif text-navy italic">
             Ces mots vous évoquent-ils quelque chose ? <br />
-            <span className="text-old-rose not-italic font-bold text-lg mt-2 block">Vous êtes au bon endroit.</span>
+            <span className="text-royal-blue not-italic font-bold text-lg mt-2 block">Vous êtes au bon endroit.</span>
           </p>
         </div>
       </section>
@@ -99,13 +99,13 @@ export default function PourQuoi() {
             {/* Texte Principal : Très lisible */}
             <div className="md:col-span-7 md:pl-8 space-y-8">
               <div>
-                <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6">Une boussole pour l&apos;avenir</h2>
+                <h2 className="text-3xl md:text-4xl font-serif text-navy mb-6">Un éclairage pour l&apos;avenir</h2>
                 <div className="w-16 h-0.5 bg-sage/50 mb-6"></div>
               </div>
 
               <div className="text-lg md:text-xl text-navy-light leading-relaxed space-y-6 text-justify md:text-left">
                 <p>
-                  <span className="text-5xl text-sage font-serif float-left mr-3 mt-[-12px] opacity-20">C</span>
+                  <span className="text-5xl text-royal-blue font-serif float-left mr-3 mt-[-12px]">C</span>
                   <span className="text-navy">haque vie mérite d&apos;être racontée et j&apos;ai la conviction que pour bien avancer dans la vie, il faut savoir d&apos;où l&apos;on vient.</span>
                 </p>
                 <p>
@@ -113,12 +113,7 @@ export default function PourQuoi() {
                 </p>
               </div>
 
-              {/* Encadré citation simple */}
-              <div className="bg-white p-6 rounded-lg border-l-4 border-gold shadow-sm mt-8">
-                <p className="text-xl font-serif italic text-navy">
-                  &quot;L&apos;éclairage du passé peut donner de la lumière au présent et devenir une boussole pour le futur.&quot;
-                </p>
-              </div>
+
             </div>
           </div>
         </div>
@@ -127,15 +122,15 @@ export default function PourQuoi() {
       {/* Section "Passion & Émotion" */}
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <div className="inline-block p-5 rounded-full bg-old-rose/5 text-old-rose mb-8">
+          <div className="inline-block p-5 rounded-full bg-royal-blue/5 text-royal-blue mb-8">
             <span className="material-symbols-outlined text-4xl">history_edu</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-serif text-navy mb-8">Passion & Émotion</h2>
 
-          <div className="w-16 h-0.5 bg-old-rose/30 mx-auto mb-10"></div>
+          <div className="w-16 h-0.5 bg-royal-blue/30 mx-auto mb-10"></div>
 
           <p className="text-xl md:text-2xl text-navy leading-relaxed font-light">
-            J&apos;aime l&apos;idée de faire renaître des souvenirs, de mettre en mots une vie, <strong className="font-serif text-old-rose font-normal">votre vie</strong>.
+            J&apos;aime l&apos;idée de faire renaître des souvenirs, de mettre en mots une vie, <strong className="font-serif text-royal-blue font-normal">votre vie</strong>.
             De voir s&apos;animer votre regard à l&apos;évocation de certaines anecdotes, de sentir votre
             émotion palpable et d&apos;en écrire avec vous la partition.
           </p>

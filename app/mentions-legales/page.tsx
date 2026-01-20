@@ -21,10 +21,16 @@ export default function MentionsLegales() {
                   <strong>Nom :</strong> Delphine de Lapeyrière
                 </p>
                 <p>
-                  <strong>Activité :</strong> Biographe familiale
+                  <strong>Statut :</strong> Entrepreneur individuel
                 </p>
                 <p>
-                  <strong>Localisation :</strong> Versailles et Paris, France
+                  <strong>SIREN :</strong> 831 925 516
+                </p>
+                <p>
+                  <strong>Siège social :</strong> Saint-Cyr-l&apos;École (78210)
+                </p>
+                <p>
+                  <strong>TVA :</strong> TVA non applicable, art. 293 B du CGI
                 </p>
                 <p>
                   <strong>Email :</strong>{" "}
@@ -47,8 +53,9 @@ export default function MentionsLegales() {
                 2. Hébergement
               </h2>
               <p className="text-navy-light">
-                Ce site est hébergé par un prestataire externe. Pour toute
-                question concernant l&apos;hébergement, veuillez nous contacter.
+                Ce site est hébergé par <strong>Vercel Inc.</strong><br />
+                Adresse : 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis<br />
+                (Le nom de domaine est géré par IONOS)
               </p>
             </section>
 

@@ -25,7 +25,7 @@ export default function Services() {
               Que vous soyez grand-parent souhaitant transmettre ou une famille voulant
               honorer un proche.
             </p>
-            <span className="text-old-rose font-bold flex items-center gap-2">
+            <span className="text-royal-blue font-bold flex items-center gap-2">
               En savoir plus{" "}
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </span>
@@ -43,8 +43,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-serif font-bold mb-4 text-navy">Comment ?</h3>
             <p className="text-lg text-gray-600 mb-4">
-              Une méthodologie douce, basée sur l&apos;écoute et des entretiens réguliers à
-              votre rythme.
+              Des entretiens à votre rythme, une écoute attentive, mon savoir-faire afin de créer un livre qui vous ressemble, vivant et fidèle à vos souvenirs.
             </p>
             <span className="text-sage font-bold flex items-center gap-2">
               Voir la méthode{" "}
@@ -64,8 +63,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-serif font-bold mb-4 text-navy">Combien ?</h3>
             <p className="text-lg text-gray-600 mb-4">
-              Des tarifs clairs et adaptés à la longueur et à la complexité de votre
-              projet de vie.
+              Des tarifs clairs et adaptés à votre projet.
             </p>
             <span className="text-gold font-bold flex items-center gap-2">
               Consulter les tarifs{" "}

@@ -22,7 +22,7 @@ export default function Combien() {
             </h1>
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
             <p className="text-lg text-navy-light leading-relaxed max-w-3xl mx-auto">
-              Un livre inestimable pour votre famille, réalisé avec l&apos;exigence d&apos;un véritable artisanat littéraire.
+              Offrir le récit de votre vie à vos proches, c&apos;est leur transmettre un trésor.
             </p>
           </div>
         </div>
@@ -55,8 +55,8 @@ export default function Combien() {
                     <span className="material-symbols-outlined">schedule</span>
                   </span>
                   <div>
-                    <h3 className="text-xl font-serif text-navy">Temps réel vs Temps facturé</h3>
-                    <p className="text-navy-light">Une heure d&apos;entretien équivaut à environ 6 à 7 heures de travail d&apos;écriture et de structuration.</p>
+                    <h3 className="text-xl font-serif text-navy">Travail facturé au temps réel</h3>
+                    <p className="text-navy-light">Après 1h d&apos;entretien il faut compter 7h de travail d&apos;écriture et de structuration.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -82,19 +82,15 @@ export default function Combien() {
 
                 <div className="w-full h-px bg-white/20 my-6"></div>
 
-                <p className="text-lg mb-6 font-light">Ce tarif comprend :</p>
+                <p className="text-lg mb-6 font-light">Pour mémoire</p>
                 <ul className="text-left space-y-3 mb-8 px-4">
                   <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-gold">mic</span>
-                    <span>1h d&apos;entretien (écoute active)</span>
+                    <span className="material-symbols-outlined text-gold">timer</span>
+                    <span>Un entretien = 8h</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-gold">edit_note</span>
-                    <span>6h à 7h d&apos;écriture et corrections</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-gold">print</span>
-                    <span>Mise en page progressive</span>
+                    <span className="material-symbols-outlined text-gold">payments</span>
+                    <span>Paiement échelonné au fil des entretiens</span>
                   </li>
                 </ul>
                 <p className="text-sm text-white/50 italic">

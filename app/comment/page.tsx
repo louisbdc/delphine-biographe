@@ -118,9 +118,9 @@ export default function Comment() {
             </div>
 
             {/* Et à la fin ? */}
-            <div className="bg-white p-6 rounded-2xl border-l-4 border-old-rose shadow-lg">
+            <div className="bg-white p-6 rounded-2xl border-l-4 border-royal-blue shadow-lg">
               <div className="flex items-center gap-3 mb-4">
-                <span className="material-symbols-outlined text-3xl text-old-rose">
+                <span className="material-symbols-outlined text-3xl text-royal-blue">
                   print
                 </span>
                 <h3 className="text-2xl font-serif font-bold text-navy">

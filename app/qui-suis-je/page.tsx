@@ -68,7 +68,7 @@ export default function QuiSuisJe() {
             {/* Colonne Récit */}
             <div className="md:w-2/3 space-y-8 text-lg text-navy-light leading-relaxed">
               <p>
-                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-sage/30">D</span>
+                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-royal-blue">D</span>
                 ès que j&apos;ai su lire, j&apos;ai dévoré tout ce qui me tombait sous la main, à une vitesse folle paraît-il. Mes parents avaient du mal à suivre et moi je suivais le bibliobus dans tous ses déplacements dans mon quartier.
               </p>
 
@@ -137,7 +137,7 @@ export default function QuiSuisJe() {
 
             {/* Colonne Visuelle "Chapitre" */}
             <div className="md:w-1/3 flex flex-col items-center text-center md:sticky md:top-32">
-              <div className="w-20 h-20 bg-old-rose/10 rounded-full flex items-center justify-center mb-6 text-old-rose">
+              <div className="w-20 h-20 bg-royal-blue/10 rounded-full flex items-center justify-center mb-6 text-royal-blue">
                 <span className="material-symbols-outlined text-4xl">history_edu</span>
               </div>
               <h2 className="text-3xl font-serif font-bold text-navy mb-4 leading-tight">
@@ -145,7 +145,7 @@ export default function QuiSuisJe() {
                 <span className="text-lg font-sans font-normal text-navy-light block mt-2">pour des personnes uniques</span>
               </h2>
               {/* Séparateur signature */}
-              <div className="w-16 h-0.5 bg-old-rose/50 my-4"></div>
+              <div className="w-16 h-0.5 bg-royal-blue/50 my-4"></div>
             </div>
 
             {/* Colonne Récit */}
@@ -157,8 +157,8 @@ export default function QuiSuisJe() {
                 Quelques années après, à la mort de mes grands-parents cette fois-ci, j&apos;ai voulu leur dédier un recueil, pour garder une trace de leur vie si riche, pour transmettre à mes enfants ce passé qui nous avait construits et qui nous permettait de regarder l&apos;avenir en étant fiers de nos racines.
               </p>
 
-              <div className="flex gap-4 bg-white p-6 rounded-xl shadow-sm border-l-4 border-old-rose">
-                <span className="material-symbols-outlined text-old-rose text-3xl flex-shrink-0">sentiment_dissatisfied</span>
+              <div className="flex gap-4 bg-white p-6 rounded-xl shadow-sm border-l-4 border-royal-blue">
+                <span className="material-symbols-outlined text-royal-blue text-3xl flex-shrink-0">sentiment_dissatisfied</span>
                 <p className="italic text-navy">
                   Mon seul regret est de ne pas les avoir questionnés plus sur certains événements, certaines décisions qu&apos;ils avaient pu prendre. Ils n&apos;étaient plus là pour me répondre…
                 </p>
