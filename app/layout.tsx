@@ -24,8 +24,21 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://delphinedelapeyriere.fr"),
   title: "Delphine de Lapeyrière | Biographe Familiale",
-  description: "Biographe familiale, j'écris le livre de votre vie",
+  description: "Biographe familiale, j'écris le livre de votre vie. Récits de vie, mémoires et transmission à Versailles et Paris.",
+  keywords: ["biographe familiale", "écrivain public", "récit de vie", "mémoires", "transmission", "Versailles", "Paris", "livre de vie"],
+  authors: [{ name: "Delphine de Lapeyrière" }],
+  creator: "Delphine de Lapeyrière",
+  openGraph: {
+    title: "Delphine de Lapeyrière | Biographe Familiale",
+    description: "Confiez-moi vos souvenirs, j'écrirai le livre de votre vie. Biographe familiale intervenant à Versailles et Paris.",
+    url: "https://delphinedelapeyriere.fr",
+    siteName: "Delphine de Lapeyrière",
+    locale: "fr_FR",
+    type: "website",
+    images: ["/delphine_first_page.jpg"],
+  },
   icons: {
     icon: "/logo.png",
   },

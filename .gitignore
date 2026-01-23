@@ -89,3 +89,9 @@ pnpm-lock.yaml
 .history/
 .history/*
 .cursor
+.agent/
+.agents/
+.claude/
+.codex/
+.gemini/
+.opencode/
