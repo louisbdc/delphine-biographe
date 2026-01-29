@@ -11,6 +11,7 @@ export type TimelineItem = {
   body?: string;
   reverse?: boolean;
   image?: string;
+  alt?: string;
   width?: number;
   height?: number;
 };
@@ -44,9 +45,7 @@ export default function Timeline({ items }: TimelineProps) {
         const centerPageY = window.scrollY + viewportCenter;
 
         // Progress is the distance from container top to the viewport center
-        let nextProgress = centerPageY - containerTopPage;
-        if (Number.isNaN(nextProgress)) nextProgress = 0;
-        nextProgress = Math.max(0, Math.min(containerHeight, nextProgress));
+        const nextProgress = Math.max(0, Math.min(containerHeight, centerPageY - containerTopPage));
         setProgressPx(nextProgress);
 
         // Determine which checkpoints are above the viewport center
@@ -99,8 +98,8 @@ export default function Timeline({ items }: TimelineProps) {
             >
               {/* Title - Left by default, Right when reversed */}
               <div className={`col-start-2 text-left md:pl-0 md:row-start-1 ${isReversed
-                  ? "md:col-start-3 md:text-left"
-                  : "md:col-start-1 md:text-right"
+                ? "md:col-start-3 md:text-left"
+                : "md:col-start-1 md:text-right"
                 }`}>
                 <h4
                   className={`text-lg md:text-xl font-serif font-semibold uppercase tracking-[0.18em] ${isActive ? "text-gold" : "text-navy-light"
@@ -112,7 +111,7 @@ export default function Timeline({ items }: TimelineProps) {
                   <div className="mt-6">
                     <Image
                       src={step.image}
-                      alt={step.title}
+                      alt={step.alt || step.title}
                       width={step.width || 800}
                       height={step.height || 600}
                       className="w-full rounded-2xl shadow-lg h-auto"
@@ -128,8 +127,8 @@ export default function Timeline({ items }: TimelineProps) {
                     checkpointRefs.current[index] = el;
                   }}
                   className={`relative inline-flex h-4 w-4 items-center justify-center rounded-full border-2 ${isActive
-                      ? "border-gold bg-cream"
-                      : "border-navy/40 bg-cream-dark"
+                    ? "border-gold bg-cream"
+                    : "border-navy/40 bg-cream-dark"
                     }`}
                 >
                   <span
@@ -141,8 +140,8 @@ export default function Timeline({ items }: TimelineProps) {
 
               {/* Content - Right by default, Left when reversed */}
               <div className={`col-start-2 row-start-2 md:row-start-1 ${isReversed
-                  ? "md:col-start-1 md:text-right"
-                  : "md:col-start-3"
+                ? "md:col-start-1 md:text-right"
+                : "md:col-start-3"
                 }`}>
                 <div className="rounded-3xl border border-navy/20 bg-cream p-6 shadow-lg backdrop-blur">
                   {step.tag ? (

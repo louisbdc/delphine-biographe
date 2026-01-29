@@ -1,4 +1,11 @@
 import Navigation from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mentions Légales | Delphine de Lapeyrière",
+  description: "Mentions légales, éditeur du site, hébergement et protection des données personnelles.",
+  robots: "noindex, nofollow",
+};
 
 export default function MentionsLegales() {
   return (

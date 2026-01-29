@@ -10,7 +10,7 @@ export default function Introduction() {
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold rounded-2xl z-0"></div>
             <Image
               src="/delphine_first_page.jpg"
-              alt="Bibliothèque chaleureuse"
+              alt="Bibliothèque personnelle - Organisation de souvenirs et mémoires"
               width={800}
               height={600}
               className="relative z-10 rounded-2xl shadow-2xl w-full"

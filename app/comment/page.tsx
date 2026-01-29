@@ -1,5 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Timeline from "@/components/Timeline";
+import { Metadata } from "next";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Méthodologie : Les étapes de création de votre livre de vie",
+  description: "Découvrez les étapes : du premier contact à l'impression de votre livre. Entretiens, écriture, validation et respect de votre parole.",
+};
 
 const timelineSteps = [
   {
@@ -8,6 +15,7 @@ const timelineSteps = [
     headline: "Nous nous rencontrons pour faire connaissance",
     body: "Après un premier contact téléphonique, si vous habitez Paris ou sa proche banlieue, je vous propose une rencontre informelle autour d'un café. Nous faisons connaissance, je réponds à vos éventuelles questions et si vous souhaitez vous lancer dans cette aventure, nous prenons rendez-vous pour le premier entretien. Si vous habitez en dehors de Paris et de sa proche banlieue, la première rencontre pour faire connaissance se passera en visio. Nous aviserons ensemble pour la suite.",
     image: "/first_contact2.jpg",
+    alt: "Rencontre autour d'un café pour discuter du projet de biographie",
     width: 6000,
     height: 4000,
   },
@@ -18,6 +26,7 @@ const timelineSteps = [
     body: "Un entretien dure une heure. Il se passe généralement chez vous, dans un café si vous préférez ou même en visio. Je privilégie la première option. J'arrive avec mes oreilles ouvertes et attentives, un cahier, un stylo et un dictaphone. Je prends tout en note, l'enregistrement me sert de support éventuel pour vérifier un nom, une date. Au cours de ces entretiens vous allez me parler de vous, de vos souvenirs d'enfance, de votre vie de famille, professionnelle, de vos réflexions sur la vie. Je ne vous poserai pas ou peu de questions, c'est vous qui mènerez les entretiens sauf si je sens qu'il faut creuser un peu plus. Vous pourrez agrémenter vos propos de photos que vous aurez choisies en avance et qui vous aideront peut-être à retrouver des souvenirs bien enfouis. Une biographie complète demande de dix à vingt entretiens.",
     reverse: true,
     image: "/entretien.jpg",
+    alt: "Prise de notes lors d'un entretien biographique",
     width: 1280,
     height: 684,
   },
@@ -27,14 +36,51 @@ const timelineSteps = [
     headline: "Je transforme vos mots en récit littéraire",
     body: "Après chaque entretien, j'ai, en moyenne, sept heures de travail d'écriture. Je retranscris de façon plus littéraire, je construis un récit vivant tout en gardant votre style, votre ton. C'est votre histoire, elle doit être à votre image, je ne raconterai que ce que vous avez bien voulu me confier. Je vous soumets mes écrits après chaque entretien afin que vous validiez, que vous corrigiez, que vous supprimiez ou rajoutiez des éléments. Nous sommes alors prêts pour l'entretien suivant.",
     image: "/writing_job.jpg",
+    alt: "Travail d'écriture et de rédaction de récit de vie",
     width: 1280,
     height: 853,
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien d'entretiens sont nécessaires ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pour une biographie complète, il faut compter en moyenne dix à vingt entretiens d'une heure. Pour une tranche de vie, deux à six entretiens suffisent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "À quel rythme se déroulent les entretiens ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je suggère un entretien tous les quinze jours maximum pour éviter de perdre le fil de vos souvenirs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que se passe-t-il à la fin ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une fois le récit validé, j'envoie le fichier à un imprimeur pour un bon à tirer. Après relecture et corrections éventuelles, vous commandez le nombre d'exemplaires souhaité."
+      }
+    }
+  ]
+};
+
 export default function Comment() {
   return (
     <>
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navigation />
 
       {/* Hero Section : Portrait Élégant */}

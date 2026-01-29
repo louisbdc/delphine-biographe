@@ -42,13 +42,13 @@ export default function Navigation() {
               height={1024}
               className="h-12 md:h-16 w-auto"
             />
-            <span className="text-xl md:text-3xl font-serif font-bold text-navy">
+            <span className="text-xl md:text-3xl font-serif font-bold text-navy whitespace-nowrap">
               Delphine, biographe
             </span>
           </a>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-8 text-lg font-semibold text-navy-light">
+          <ul className="hidden lg:flex gap-8 text-lg font-semibold text-navy-light">
             {menuItems.map((item) => (
               <li key={item.href}>
                 {item.isButton ? (
@@ -73,7 +73,7 @@ export default function Navigation() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-navy hover:text-royal-blue transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded"
+            className="lg:hidden p-2 text-navy hover:text-royal-blue transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
@@ -89,7 +89,7 @@ export default function Navigation() {
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
           onClick={closeMenu}
           aria-hidden="true"
         />
@@ -97,7 +97,7 @@ export default function Navigation() {
 
       {/* Mobile Side Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-cream shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-cream shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
       >
         <div className="flex flex-col h-full">

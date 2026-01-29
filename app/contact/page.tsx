@@ -1,5 +1,11 @@
 import Navigation from "@/components/Navigation";
 import ContactCard from "@/components/ContactCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contactez Delphine | Biographe à Versailles et Paris",
+  description: "Prenez contact pour une première discussion gratuite et sans engagement. Située proche Versailles, je me déplace à Paris et partout en France.",
+};
 
 export default function ContactPage() {
   return (

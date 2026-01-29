@@ -1,5 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Delphine de Lapeyrière | Mon parcours de biographe familiale",
+  description: "Découvrez mon parcours de femme de marin à biographe familiale. Une passion pour l'écoute et l'écriture au service de votre histoire.",
+};
 
 export default function QuiSuisJe() {
   return (
@@ -193,7 +199,7 @@ export default function QuiSuisJe() {
             Prêt à écrire votre histoire ensemble ?
           </h2>
           <p className="text-xl text-navy-light mb-10 leading-relaxed">
-            Avec mon expérience de vie et ma formation, je suis là pour vous accompagner dans cette belle aventure qu&apos;est l&apos;écriture de votre biographie.
+            Je suis là pour vous accompagner dans cette belle aventure qu&apos;est l&apos;écriture de votre biographie.
           </p>
           <a
             href="/contact"

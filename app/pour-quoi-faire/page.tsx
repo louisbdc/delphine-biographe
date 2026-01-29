@@ -1,5 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Pourquoi écrire sa biographie ? Transmission et Mémoire",
+  description: "Transmettre un trésor inestimable, guérir des blessures ou simplement ne pas oublier. Découvrez le sens profond d'écrire le récit de votre vie.",
+};
 
 export default function PourQuoi() {
   return (

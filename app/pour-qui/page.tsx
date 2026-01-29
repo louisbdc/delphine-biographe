@@ -1,5 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Biographie pour tous : Aînés, Familles, et Projets Personnels",
+  description: "Que ce soit pour offrir à vos grands-parents ou pour vous-même, la biographie s'adresse à toute personne souhaitant transmettre son histoire.",
+};
 
 export default function PourQui() {
   return (
@@ -64,8 +70,8 @@ export default function PourQui() {
                     <span className="material-symbols-outlined text-2xl">card_giftcard</span>
                   </span>
                   <p className="text-navy font-serif text-xl italic">
-                    &quot;Offrez-leur de raconter leurs souvenirs et d&apos;en faire un livre. C&apos;est un magnifique cadeau
-                    pour eux et pour vous !&quot;
+                    Offrez-leur de raconter leurs souvenirs et d&apos;en faire un livre. C&apos;est un magnifique cadeau
+                    pour eux et pour vous !
                   </p>
                 </div>
               </div>
@@ -122,8 +128,7 @@ export default function PourQui() {
 
               <div className="text-lg text-navy-light space-y-6 leading-relaxed">
                 <p>
-                  Vous avez le sentiment que votre vie mérite de ne pas être oubliée. Vous avez vécu une épreuve
-                  et vous avez besoin de mettre des mots dessus pour cicatriser, une période de votre vie vous a
+                  Vous avez vécu une épreuve et vous avez besoin de mettre des mots dessus, une période de votre vie vous a
                   particulièrement marqué et vous aimeriez en laisser une trace écrite...
                 </p>
 
@@ -165,7 +170,7 @@ export default function PourQui() {
                 <p>
                   Vous avez retrouvé des lettres émouvantes, touchantes, importantes, photographie d&apos;une époque
                   révolue. Que diriez-vous d&apos;en faire un livre en y ajoutant votre touche, des renseignements,
-                  des photos, des commentaires ?
+                  des photos, votre témoignage ?
                 </p>
                 <p className="font-serif text-xl text-navy italic border-l-4 border-royal-blue pl-6">
                   &quot;Transformez vos archives en un récit vivant qui préservera ces précieux souvenirs pour les

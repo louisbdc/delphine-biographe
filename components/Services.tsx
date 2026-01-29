@@ -22,8 +22,7 @@ export default function Services() {
             </div>
             <h3 className="text-2xl font-serif font-bold mb-4 text-navy">Pour qui ?</h3>
             <p className="text-lg text-gray-600 mb-4">
-              Que vous soyez grand-parent souhaitant transmettre ou une famille voulant
-              honorer un proche.
+              Toute vie vaut la peine d&apos;être racontée.
             </p>
             <span className="text-royal-blue font-bold flex items-center gap-2">
               En savoir plus{" "}

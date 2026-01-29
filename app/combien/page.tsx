@@ -1,4 +1,10 @@
 import Navigation from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tarifs Biographe Familiale | Prix d'un récit de vie",
+  description: "Une tarification transparente à la séance (55€/h). Maîtrisez votre budget avec un paiement échelonné. Estimation pour un récit complet ou ciblé.",
+};
 
 export default function Combien() {
   return (
@@ -14,16 +20,10 @@ export default function Combien() {
 
         <div className="container mx-auto px-6 max-w-4xl relative z-10">
           <div className="text-center">
-            <span className="text-gold font-bold tracking-widest uppercase text-sm mb-6 block fade-in">
-              Transparence & Valeur
-            </span>
-            <h1 className="text-5xl md:text-7xl font-serif text-navy mb-8 leading-tight fade-in">
-              La valeur d&apos;une vie
+            <h1 className="text-4xl md:text-6xl font-serif text-navy mb-8 leading-tight fade-in">
+              Offrir le récit de votre vie à vos proches, c&apos;est leur transmettre un trésor.
             </h1>
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
-            <p className="text-lg text-navy-light leading-relaxed max-w-3xl mx-auto">
-              Offrir le récit de votre vie à vos proches, c&apos;est leur transmettre un trésor.
-            </p>
           </div>
         </div>
       </section>

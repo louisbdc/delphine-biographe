@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src="/hero.jpg"
-          alt="Mains écrivant dans un journal"
+          alt="Journal intime écrit à la main - Illustration biographie familiale"
           fill
           className="object-cover object-[60%_center] md:object-[70%_center]"
           priority

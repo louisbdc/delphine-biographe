@@ -3,6 +3,7 @@ import { Playfair_Display, Lato, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import AccessibilityControls from "@/components/AccessibilityControls";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -64,13 +65,14 @@ export default function RootLayout({
       >
         {/* Accessibility & Top Bar */}
         <div className="bg-navy text-cream py-2 px-4 flex justify-between items-center text-sm md:text-base">
-          <span className="hidden md:inline">📍 Navigue entre Versailles et Paris</span>
+          <span className="hidden lg:inline">📍 Navigue entre Versailles et Paris</span>
           <AccessibilityControls />
         </div>
         <main className="flex-1">
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
