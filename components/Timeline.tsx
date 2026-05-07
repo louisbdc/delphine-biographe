@@ -82,7 +82,7 @@ export default function Timeline({ items }: TimelineProps) {
         style={{
           height: `${progressPx}px`,
           background:
-            "linear-gradient(to bottom, rgba(197,160,89,1), rgba(197,160,89,0))",
+            "linear-gradient(to bottom, rgb(var(--color-gold) / 1), rgb(var(--color-gold) / 0))",
         }}
       />
 

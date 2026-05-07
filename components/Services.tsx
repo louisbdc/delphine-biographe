@@ -13,10 +13,10 @@ export default function Services() {
           {/* Card 1: Pour qui ? */}
           <a
             href="/pour-qui"
-            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-navy"
+            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2"
           >
-            <div className="bg-navy/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-navy group-hover:text-white transition-colors">
-              <span className="material-symbols-outlined text-4xl text-navy group-hover:text-white">
+            <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
+              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-white">
                 face_4
               </span>
             </div>
@@ -24,7 +24,7 @@ export default function Services() {
             <p className="text-lg text-gray-600 mb-4">
               Toute vie vaut la peine d&apos;être racontée.
             </p>
-            <span className="text-royal-blue font-bold flex items-center gap-2">
+            <span className="text-gold font-bold flex items-center gap-2">
               En savoir plus{" "}
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </span>
@@ -33,10 +33,10 @@ export default function Services() {
           {/* Card 2: Comment ? */}
           <a
             href="/comment"
-            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-sage"
+            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2"
           >
-            <div className="bg-sage/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-sage group-hover:text-white transition-colors">
-              <span className="material-symbols-outlined text-4xl text-sage group-hover:text-white">
+            <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
+              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-white">
                 edit_note
               </span>
             </div>
@@ -44,7 +44,7 @@ export default function Services() {
             <p className="text-lg text-gray-600 mb-4">
               Des entretiens à votre rythme, une écoute attentive, mon savoir-faire afin de créer un livre qui vous ressemble, vivant et fidèle à vos souvenirs.
             </p>
-            <span className="text-sage font-bold flex items-center gap-2">
+            <span className="text-gold font-bold flex items-center gap-2">
               Voir la méthode{" "}
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </span>
@@ -53,9 +53,9 @@ export default function Services() {
           {/* Card 3: Combien ? */}
           <a
             href="/combien"
-            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 border-t-4 border-gold"
+            className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2"
           >
-            <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold group-hover:text-white transition-colors">
+            <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
               <span className="material-symbols-outlined text-4xl text-gold group-hover:text-white">
                 euro
               </span>

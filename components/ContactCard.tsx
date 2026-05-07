@@ -95,7 +95,7 @@ export default function ContactCard({ className = "" }: ContactCardProps) {
                         Envoyez-moi un message
                     </h2>
                     <p className="text-navy-light text-lg leading-relaxed max-w-2xl">
-                        Je navigue entre <strong className="text-navy font-medium">Versailles</strong> et <strong className="text-navy font-medium">Paris</strong> mais je peux me déplacer plus loin sur demande. N&apos;hésitez pas à me contacter pour une première discussion sans engagement.
+                        Je navigue entre <strong className="text-navy font-medium">Versailles</strong> et <strong className="text-navy font-medium">Paris </strong>mais je peux me déplacer plus loin sur demande. N&apos;hésitez pas à me contacter pour une première discussion sans engagement.
                     </p>
                 </div>
 

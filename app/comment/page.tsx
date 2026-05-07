@@ -2,10 +2,25 @@ import Navigation from "@/components/Navigation";
 import Timeline from "@/components/Timeline";
 import { Metadata } from "next";
 import Script from "next/script";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Méthodologie : Les étapes de création de votre livre de vie",
+  title: "Méthodologie et étapes",
   description: "Découvrez les étapes : du premier contact à l'impression de votre livre. Entretiens, écriture, validation et respect de votre parole.",
+  alternates: { canonical: "/comment" },
+  openGraph: {
+    title: "Méthodologie : les étapes de création de votre livre de vie",
+    description: "Premier contact, entretiens, écriture, validation, impression : ma méthode pas à pas pour écrire votre biographie.",
+    url: "/comment",
+    type: "article",
+    images: [{ url: "/entretien.jpg", width: 1280, height: 684, alt: "Entretien de biographie" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Méthodologie : les étapes de création de votre livre",
+    description: "Premier contact, entretiens, écriture, validation, impression.",
+    images: ["/entretien.jpg"],
+  },
 };
 
 const timelineSteps = [
@@ -81,10 +96,16 @@ export default function Comment() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <BreadcrumbSchema
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Comment ?", url: "/comment" },
+        ]}
+      />
       <Navigation />
 
       {/* Hero Section : Portrait Élégant */}
-      <section className="relative py-24 bg-[#FDFBF7] overflow-hidden">
+      <section className="relative py-24 bg-cream overflow-hidden">
         {/* Décoration d'arrière-plan */}
         <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
@@ -123,7 +144,7 @@ export default function Comment() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {/* Combien d'entretiens ? */}
-            <div className="bg-white p-6 rounded-2xl border-l-4 border-gold shadow-lg">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
               <div className="flex items-center gap-3 mb-4">
                 <span className="material-symbols-outlined text-3xl text-gold">
                   question_mark
@@ -148,9 +169,9 @@ export default function Comment() {
             </div>
 
             {/* À quel rythme ? */}
-            <div className="bg-white p-6 rounded-2xl border-l-4 border-sage shadow-lg">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
               <div className="flex items-center gap-3 mb-4">
-                <span className="material-symbols-outlined text-3xl text-sage">
+                <span className="material-symbols-outlined text-3xl text-gold">
                   schedule
                 </span>
                 <h3 className="text-2xl font-serif font-bold text-navy">
@@ -164,9 +185,9 @@ export default function Comment() {
             </div>
 
             {/* Et à la fin ? */}
-            <div className="bg-white p-6 rounded-2xl border-l-4 border-royal-blue shadow-lg">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
               <div className="flex items-center gap-3 mb-4">
-                <span className="material-symbols-outlined text-3xl text-royal-blue">
+                <span className="material-symbols-outlined text-3xl text-gold">
                   print
                 </span>
                 <h3 className="text-2xl font-serif font-bold text-navy">

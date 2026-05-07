@@ -19,7 +19,7 @@ export default function Introduction() {
 
           {/* Text Content */}
           <div className="order-1 md:order-2">
-            <h2 className="text-4xl font-serif font-bold text-navy mb-8">
+            <h2 className="text-4xl font-serif font-bold text-gold mb-8">
               Écrire le livre de votre vie
             </h2>
 
@@ -36,8 +36,8 @@ export default function Introduction() {
                 les lecteurs entendent <strong>votre voix</strong> sous ma plume
                 caméléon.
               </p>
-              <p className="bg-cream-dark p-6 rounded-xl border-l-4 border-sage">
-                <span className="material-symbols-outlined text-sage float-left mr-3 text-3xl">
+              <p className="bg-cream-dark p-6 rounded-xl">
+                <span className="material-symbols-outlined text-gold float-left mr-3 text-3xl">
                   diversity_3
                 </span>
                 Vous êtes parents, peut-être même déjà grands-parents, ce sera un beau

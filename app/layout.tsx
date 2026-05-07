@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Lato, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import AccessibilityControls from "@/components/AccessibilityControls";
+import ColorTweak from "@/components/ColorTweak";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -26,19 +27,48 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://delphinedelapeyriere.fr"),
-  title: "Delphine de Lapeyrière | Biographe Familiale",
-  description: "Biographe familiale, j'écris le livre de votre vie. Récits de vie, mémoires et transmission à Versailles et Paris.",
-  keywords: ["biographe familiale", "écrivain public", "récit de vie", "mémoires", "transmission", "Versailles", "Paris", "livre de vie"],
+  title: {
+    default: "Delphine de Lapeyrière | Biographe Familiale",
+    template: "%s | Delphine de Lapeyrière",
+  },
+  description: "Biographe familiale, j'écris le livre de votre vie. Récits de vie, mémoires et transmission près de Versailles, à Paris et partout en France.",
   authors: [{ name: "Delphine de Lapeyrière" }],
   creator: "Delphine de Lapeyrière",
+  publisher: "Delphine de Lapeyrière",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Delphine de Lapeyrière | Biographe Familiale",
-    description: "Confiez-moi vos souvenirs, j'écrirai le livre de votre vie. Biographe familiale intervenant à Versailles et Paris.",
-    url: "https://delphinedelapeyriere.fr",
-    siteName: "Delphine de Lapeyrière",
+    description: "Confiez-moi vos souvenirs, j'écrirai le livre de votre vie. Biographe familiale intervenant près de Versailles, à Paris et partout en France.",
+    url: "/",
+    siteName: "Delphine de Lapeyrière, biographe familiale",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "/delphine_first_page.jpg",
+        width: 1280,
+        height: 879,
+        alt: "Delphine de Lapeyrière, biographe familiale",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Delphine de Lapeyrière | Biographe Familiale",
+    description: "Biographe familiale. Je transforme vos souvenirs en un livre transmis aux générations futures.",
     images: ["/delphine_first_page.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: "/logo.png",
@@ -65,13 +95,14 @@ export default function RootLayout({
       >
         {/* Accessibility & Top Bar */}
         <div className="bg-navy text-cream py-2 px-4 flex justify-between items-center text-sm md:text-base">
-          <span className="hidden lg:inline">📍 Navigue entre Versailles et Paris</span>
+          <span className="hidden lg:inline">📍 Basée près de Versailles, je me déplace dans toute la France</span>
           <AccessibilityControls />
         </div>
         <main className="flex-1">
           {children}
         </main>
         <Footer />
+        <ColorTweak />
         <Analytics />
       </body>
     </html>

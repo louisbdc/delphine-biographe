@@ -1,19 +1,41 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import { Metadata } from "next";
+import BiographyExcerpts from "@/components/BiographyExcerpts";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Delphine de Lapeyrière | Mon parcours de biographe familiale",
+  title: "Qui suis-je ? Mon parcours",
   description: "Découvrez mon parcours de femme de marin à biographe familiale. Une passion pour l'écoute et l'écriture au service de votre histoire.",
+  alternates: { canonical: "/qui-suis-je" },
+  openGraph: {
+    title: "Qui suis-je ? Le parcours de Delphine, biographe familiale",
+    description: "Femme de marin devenue biographe familiale après une formation chez Anne-Sylvie Pinel. Mon parcours, ma passion pour l'écoute et l'écriture.",
+    url: "/qui-suis-je",
+    type: "article",
+    images: [{ url: "/Delphine.jpg", width: 1280, height: 1085, alt: "Portrait de Delphine de Lapeyrière" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Qui suis-je ? Le parcours de Delphine, biographe",
+    description: "Femme de marin devenue biographe familiale. Mon parcours, ma passion pour l'écoute et l'écriture.",
+    images: ["/Delphine.jpg"],
+  },
 };
 
 export default function QuiSuisJe() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Qui suis-je ?", url: "/qui-suis-je" },
+        ]}
+      />
       <Navigation />
 
       {/* Hero Section : Portrait Élégant */}
-      <section className="relative py-24 bg-[#FDFBF7] overflow-hidden">
+      <section className="relative py-24 bg-cream overflow-hidden">
         {/* Décoration d'arrière-plan */}
         <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
@@ -31,7 +53,7 @@ export default function QuiSuisJe() {
               </h1>
               <div className="w-24 h-1 bg-gold mb-8"></div>
               <p className="text-2xl md:text-3xl font-serif text-navy mb-6 font-light">
-                Je m&apos;appelle <span className="font-bold italic" style={{ color: '#4169E1' }}>Delphine de Lapeyrière</span>.
+                Je m&apos;appelle <span className="font-bold italic text-gold">Delphine de Lapeyrière</span>.
               </p>
               <p className="text-lg text-navy-light leading-relaxed max-w-2xl">
                 Une passionnée des mots et des histoires de vie, prête à écouter la vôtre avec bienveillance et sensibilité.
@@ -74,7 +96,7 @@ export default function QuiSuisJe() {
             {/* Colonne Récit */}
             <div className="md:w-2/3 space-y-8 text-lg text-navy-light leading-relaxed">
               <p>
-                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-royal-blue">D</span>
+                <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-gold">D</span>
                 ès que j&apos;ai su lire, j&apos;ai dévoré tout ce qui me tombait sous la main, à une vitesse folle paraît-il. Mes parents avaient du mal à suivre et moi je suivais le bibliobus dans tous ses déplacements dans mon quartier.
               </p>
 
@@ -84,7 +106,7 @@ export default function QuiSuisJe() {
                 </p>
               </div>
 
-              <div className="bg-[#FDFBF7] p-8 rounded-xl border border-sage/10 relative">
+              <div className="bg-cream p-8 rounded-xl border border-sage/10 relative">
                 <span className="material-symbols-outlined text-sage absolute top-6 right-6 text-2xl opacity-20">edit_note</span>
                 <p>
                   Plus tard, j&apos;ai écrit des lettres, des poèmes exprimant mon mal-être, racontant mes chagrins d&apos;amour ou mes révoltes, des nouvelles, un roman même ! Au fil de la vie, mes écrits se sont plus tournés vers les autres. En plus des lettres, à mon mari, mes enfants et ceux que j&apos;aime, je me suis mise à écrire des biographies.
@@ -113,7 +135,7 @@ export default function QuiSuisJe() {
             </div>
 
             {/* Colonne Récit */}
-            <div className="md:w-2/3 space-y-8 text-lg text-blue-50/90 leading-relaxed font-light">
+            <div className="md:w-2/3 space-y-8 text-lg text-cream/90 leading-relaxed font-light">
               <p>
                 Après des études d&apos;histoire et de communication, j&apos;ai eu une vie de femme de marin remplie de déménagements, d&apos;enfants, de voyages, de destinations exotiques, de rencontres, d&apos;adieux et de retrouvailles.
               </p>
@@ -137,13 +159,13 @@ export default function QuiSuisJe() {
       </section>
 
       {/* Chapitre 3 : Plume d'un recueil unique (Fond Crème) */}
-      <section className="py-24 bg-[#FDFBF7]">
+      <section className="py-24 bg-cream">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="flex flex-col md:flex-row gap-16 items-start">
 
             {/* Colonne Visuelle "Chapitre" */}
             <div className="md:w-1/3 flex flex-col items-center text-center md:sticky md:top-32">
-              <div className="w-20 h-20 bg-royal-blue/10 rounded-full flex items-center justify-center mb-6 text-royal-blue">
+              <div className="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mb-6 text-gold">
                 <span className="material-symbols-outlined text-4xl">history_edu</span>
               </div>
               <h2 className="text-3xl font-serif font-bold text-navy mb-4 leading-tight">
@@ -151,7 +173,7 @@ export default function QuiSuisJe() {
                 <span className="text-lg font-sans font-normal text-navy-light block mt-2">pour des personnes uniques</span>
               </h2>
               {/* Séparateur signature */}
-              <div className="w-16 h-0.5 bg-royal-blue/50 my-4"></div>
+              <div className="w-16 h-0.5 bg-gold/50 my-4"></div>
             </div>
 
             {/* Colonne Récit */}
@@ -163,8 +185,8 @@ export default function QuiSuisJe() {
                 Quelques années après, à la mort de mes grands-parents cette fois-ci, j&apos;ai voulu leur dédier un recueil, pour garder une trace de leur vie si riche, pour transmettre à mes enfants ce passé qui nous avait construits et qui nous permettait de regarder l&apos;avenir en étant fiers de nos racines.
               </p>
 
-              <div className="flex gap-4 bg-white p-6 rounded-xl shadow-sm border-l-4 border-royal-blue">
-                <span className="material-symbols-outlined text-royal-blue text-3xl flex-shrink-0">sentiment_dissatisfied</span>
+              <div className="flex gap-4 bg-white p-6 rounded-xl shadow-sm">
+                <span className="material-symbols-outlined text-gold text-3xl flex-shrink-0">sentiment_dissatisfied</span>
                 <p className="italic text-navy">
                   Mon seul regret est de ne pas les avoir questionnés plus sur certains événements, certaines décisions qu&apos;ils avaient pu prendre. Ils n&apos;étaient plus là pour me répondre…
                 </p>
@@ -188,6 +210,8 @@ export default function QuiSuisJe() {
           </div>
         </div>
       </section>
+
+      <BiographyExcerpts />
 
       {/* CTA Final */}
       <section className="py-24 bg-white text-center relative">

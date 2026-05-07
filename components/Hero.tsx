@@ -24,10 +24,10 @@ export default function Hero() {
           </span>
           <h1 className="text-5xl md:text-7xl font-dancing font-bold text-navy mb-6 leading-tight">
             Delphine de Lapeyrière,<br />
-            <span className="italic" style={{ color: '#4169E1' }}>biographe.</span>
+            <span className="italic text-gold">biographe.</span>
           </h1>
           <p className="text-2xl md:text-3xl font-serif text-navy-light mb-8 italic border-l-4 border-gold pl-6">
-            &quot;Biographe ? Un métier étonnant, n&apos;est-ce pas ?&quot;
+            &quot;Votre vie est unique, écrivons-la ensemble !&quot;
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -35,7 +35,7 @@ export default function Hero() {
               className="bg-white text-navy text-xl px-8 py-4 rounded-xl shadow-xl hover:bg-gray-50 transition-all text-center flex items-center justify-center gap-2 font-semibold"
             >
               <span className="material-symbols-outlined">auto_stories</span>
-              Découvrir ma démarche
+              Découvrir
             </a>
             <a
               href="#contact"

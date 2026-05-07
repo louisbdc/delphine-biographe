@@ -1,19 +1,38 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import { Metadata } from "next";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Biographie pour tous : Aînés, Familles, et Projets Personnels",
+  title: "Pour qui une biographie ?",
   description: "Que ce soit pour offrir à vos grands-parents ou pour vous-même, la biographie s'adresse à toute personne souhaitant transmettre son histoire.",
+  alternates: { canonical: "/pour-qui" },
+  openGraph: {
+    title: "Pour qui une biographie ? Aînés, familles, projets personnels",
+    description: "Cadeau pour vos aînés, démarche personnelle ou simple envie de ne pas oublier : pour qui s'adresse une biographie familiale.",
+    url: "/pour-qui",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pour qui une biographie ? Aînés, familles, projets personnels",
+    description: "Pour qui s'adresse une biographie familiale ?",
+  },
 };
 
 export default function PourQui() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Pour qui ?", url: "/pour-qui" },
+        ]}
+      />
       <Navigation />
 
       {/* Hero Section : Portrait Élégant */}
-      <section className="relative py-24 bg-[#FDFBF7] overflow-hidden">
+      <section className="relative py-24 bg-cream overflow-hidden">
         {/* Décoration d'arrière-plan */}
         <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
@@ -58,14 +77,14 @@ export default function PourQui() {
 
               <div className="text-lg text-navy-light space-y-6 leading-relaxed">
                 <p>
-                  <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-royal-blue">V</span>
+                  <span className="text-5xl float-left mr-3 mt-[-8px] font-serif text-gold">V</span>
                   ous avez une grand-mère qui aime raconter ses souvenirs, ou un grand-père plutôt silencieux
                   mais vous savez que sa vie a été riche. Vous aimez écouter les souvenirs des plus anciens,
                   vous leur posez souvent des questions sur leur vie.
                 </p>
 
                 {/* Encart "Highlight" style citation */}
-                <div className="relative bg-[#FDFBF7] p-8 rounded-xl border-l-4 border-gold mt-8">
+                <div className="relative bg-cream p-8 rounded-xl mt-8">
                   <span className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md text-gold">
                     <span className="material-symbols-outlined text-2xl">card_giftcard</span>
                   </span>
@@ -94,7 +113,7 @@ export default function PourQui() {
       </section>
 
       {/* Section 2 : Un cadeau à se faire (Layout Image à Gauche) */}
-      <section className="py-24 bg-[#FDFBF7]">
+      <section className="py-24 bg-cream">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-12 gap-12 items-center">
 
@@ -133,9 +152,9 @@ export default function PourQui() {
                 </p>
 
                 {/* Encart "Highlight" */}
-                <div className="bg-white p-8 rounded-xl shadow-sm border-l-4 border-sage mt-8 flex gap-4">
+                <div className="bg-white p-8 rounded-xl shadow-sm mt-8 flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <span className="material-symbols-outlined text-3xl text-sage">healing</span>
+                    <span className="material-symbols-outlined text-3xl text-gold">healing</span>
                   </div>
                   <p className="text-navy font-medium">
                     Écrire votre histoire, c&apos;est aussi un chemin vers la guérison et la transmission de votre
@@ -152,7 +171,7 @@ export default function PourQui() {
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-royal-blue/10 text-royal-blue mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/10 text-gold mb-6">
               <span className="material-symbols-outlined text-lg">history</span>
               <span className="font-bold text-sm uppercase tracking-wider">Archives & Mémoire</span>
             </div>
@@ -160,7 +179,7 @@ export default function PourQui() {
               Pour ne pas oublier
             </h2>
             {/* Séparateur signature */}
-            <div className="w-16 h-0.5 bg-royal-blue/50 mx-auto mb-8"></div>
+            <div className="w-16 h-0.5 bg-gold/50 mx-auto mb-8"></div>
           </div>
 
           <div className="bg-cream-dark rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 relative">
@@ -172,7 +191,7 @@ export default function PourQui() {
                   révolue. Que diriez-vous d&apos;en faire un livre en y ajoutant votre touche, des renseignements,
                   des photos, votre témoignage ?
                 </p>
-                <p className="font-serif text-xl text-navy italic border-l-4 border-royal-blue pl-6">
+                <p className="font-serif text-xl text-navy italic border-l-4 border-gold pl-6">
                   &quot;Transformez vos archives en un récit vivant qui préservera ces précieux souvenirs pour les
                   générations futures.&quot;
                 </p>
@@ -197,7 +216,7 @@ export default function PourQui() {
           <h2 className="text-4xl font-serif font-bold mb-8">
             Prêt à commencer votre histoire ?
           </h2>
-          <p className="text-xl text-blue-100 mb-10 font-light">
+          <p className="text-xl text-cream/90 mb-10 font-light">
             Que vous souhaitiez offrir ce cadeau précieux ou l&apos;offrir à vous-même,
             je suis là pour vous accompagner dans cette belle aventure.
           </p>

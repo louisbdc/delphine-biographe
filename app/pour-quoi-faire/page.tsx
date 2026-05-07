@@ -1,19 +1,40 @@
 import Navigation from "@/components/Navigation";
 import Image from "next/image";
 import { Metadata } from "next";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Pourquoi écrire sa biographie ? Transmission et Mémoire",
+  title: "Pourquoi écrire sa biographie ?",
   description: "Transmettre un trésor inestimable, guérir des blessures ou simplement ne pas oublier. Découvrez le sens profond d'écrire le récit de votre vie.",
+  alternates: { canonical: "/pour-quoi-faire" },
+  openGraph: {
+    title: "Pourquoi écrire sa biographie ? Transmission et mémoire",
+    description: "Le sens profond d'écrire le récit de votre vie : transmettre un trésor, guérir une blessure, éclairer le passé.",
+    url: "/pour-quoi-faire",
+    type: "article",
+    images: [{ url: "/sea.jpg", width: 1280, height: 853, alt: "Phare éclairant la mer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pourquoi écrire sa biographie ?",
+    description: "Le sens profond d'écrire le récit de votre vie.",
+    images: ["/sea.jpg"],
+  },
 };
 
 export default function PourQuoi() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Accueil", url: "/" },
+          { name: "Pour quoi ?", url: "/pour-quoi-faire" },
+        ]}
+      />
       <Navigation />
 
       {/* Hero Section : Sobre et élégant */}
-      <section className="relative py-24 bg-[#FDFBF7] overflow-hidden">
+      <section className="relative py-24 bg-cream overflow-hidden">
         {/* Décoration d'arrière-plan très subtile */}
         <div className="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute right-[-10%] top-[-10%] w-[50vw] h-[50vw] bg-gold/20 rounded-full blur-[100px]"></div>
@@ -31,14 +52,14 @@ export default function PourQuoi() {
 
             {/* Citation encadrée proprement */}
             <div className="bg-white p-8 md:p-12 rounded-xl border border-gold/30 shadow-sm relative mx-auto max-w-3xl">
-              <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#FDFBF7] px-4 text-gold text-4xl font-serif">
+              <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-cream px-4 text-gold text-4xl font-serif">
                 “
               </span>
               <p className="text-2xl md:text-3xl font-serif text-navy mb-6 font-medium italic leading-relaxed">
                 Lorsque le passé n&apos;éclaire plus l&apos;avenir, l&apos;esprit marche dans les ténèbres
               </p>
               <p className="text-sm uppercase tracking-widest text-navy-light font-bold">
-                — Alexis de Tocqueville
+                Alexis de Tocqueville
               </p>
             </div>
           </div>
@@ -62,7 +83,7 @@ export default function PourQuoi() {
               "Présent", "Style", "Récit", "Écoute", "Écrivain",
               "Vie", "Partage", "Héritage"
             ].map((word, index) => (
-              <span key={index} className="px-5 py-3 bg-[#FDFBF7] border border-gray-100 rounded-lg text-navy-light font-serif text-lg text-center hover:border-gold hover:text-gold transition-colors duration-300 cursor-default shadow-sm">
+              <span key={index} className="px-5 py-3 bg-cream border border-gray-100 rounded-lg text-navy-light font-serif text-lg text-center hover:border-gold hover:text-gold transition-colors duration-300 cursor-default shadow-sm">
                 {word}
               </span>
             ))}
@@ -70,13 +91,13 @@ export default function PourQuoi() {
 
           <p className="text-2xl font-serif text-navy italic">
             Ces mots vous évoquent-ils quelque chose ? <br />
-            <span className="text-royal-blue not-italic font-bold text-lg mt-2 block">Vous êtes au bon endroit.</span>
+            <span className="text-gold not-italic font-bold text-lg mt-2 block">Vous êtes au bon endroit.</span>
           </p>
         </div>
       </section>
 
       {/* Section "Conviction" : L'image "de travers" style album photo */}
-      <section className="py-24 bg-[#FDFBF7] border-t border-b border-gray-100 overflow-hidden">
+      <section className="py-24 bg-cream border-t border-b border-gray-100 overflow-hidden">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-12 gap-16 items-center">
 
@@ -111,7 +132,7 @@ export default function PourQuoi() {
 
               <div className="text-lg md:text-xl text-navy-light leading-relaxed space-y-6 text-justify md:text-left">
                 <p>
-                  <span className="text-5xl text-royal-blue font-serif float-left mr-3 mt-[-12px]">C</span>
+                  <span className="text-5xl text-gold font-serif float-left mr-3 mt-[-12px]">C</span>
                   <span className="text-navy">haque vie mérite d&apos;être racontée et j&apos;ai la conviction que pour bien avancer dans la vie, il faut savoir d&apos;où l&apos;on vient.</span>
                 </p>
                 <p>
@@ -128,15 +149,15 @@ export default function PourQuoi() {
       {/* Section "Passion & Émotion" */}
       <section className="py-24 bg-white relative">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <div className="inline-block p-5 rounded-full bg-royal-blue/5 text-royal-blue mb-8">
+          <div className="inline-block p-5 rounded-full bg-gold/5 text-gold mb-8">
             <span className="material-symbols-outlined text-4xl">history_edu</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-serif text-navy mb-8">Passion & Émotion</h2>
 
-          <div className="w-16 h-0.5 bg-royal-blue/30 mx-auto mb-10"></div>
+          <div className="w-16 h-0.5 bg-gold/30 mx-auto mb-10"></div>
 
           <p className="text-xl md:text-2xl text-navy leading-relaxed font-light">
-            J&apos;aime l&apos;idée de faire renaître des souvenirs, de mettre en mots une vie, <strong className="font-serif text-royal-blue font-normal">votre vie</strong>.
+            J&apos;aime l&apos;idée de faire renaître des souvenirs, de mettre en mots une vie, <strong className="font-serif text-gold font-normal">votre vie</strong>.
             De voir s&apos;animer votre regard à l&apos;évocation de certaines anecdotes, de sentir votre
             émotion palpable et d&apos;en écrire avec vous la partition.
           </p>
@@ -144,7 +165,7 @@ export default function PourQuoi() {
       </section>
 
       {/* Section Finale : Le Cadeau */}
-      <section className="py-24 bg-[#FDFBF7]">
+      <section className="py-24 bg-cream">
         <div className="container mx-auto px-6 max-w-5xl">
           <div className="bg-navy rounded-3xl p-10 md:p-16 text-cream shadow-2xl relative overflow-hidden">
             {/* Arrière-plan subtil */}
@@ -156,7 +177,7 @@ export default function PourQuoi() {
                 <h3 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
                   Un trésor inestimable
                 </h3>
-                <p className="text-lg leading-relaxed text-blue-100 opacity-90">
+                <p className="text-lg leading-relaxed text-cream/90">
                   À l’heure où l’écrit tend à disparaître, où recevoir une lettre devient une rareté, où l’on se contente de taper un SMS rapide ou même d’enregistrer un vocal pour dire des choses aussi bien banales qu’essentielles...
                 </p>
               </div>

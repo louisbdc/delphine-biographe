@@ -61,7 +61,7 @@ export default function Navigation() {
                 ) : (
                   <a
                     href={item.href}
-                    className="hover:text-royal-blue transition-colors decoration-gold underline-offset-4 hover:underline"
+                    className="hover:text-gold transition-colors decoration-gold underline-offset-4 hover:underline"
                   >
                     {item.label}
                   </a>
@@ -73,7 +73,7 @@ export default function Navigation() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden p-2 text-navy hover:text-royal-blue transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded"
+            className="lg:hidden p-2 text-navy hover:text-gold transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
           >
@@ -121,7 +121,7 @@ export default function Navigation() {
             </a>
             <button
               onClick={closeMenu}
-              className="p-2 text-navy hover:text-royal-blue transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded"
+              className="p-2 text-navy hover:text-gold transition-colors focus:outline-none focus:ring-2 focus:ring-gold rounded"
               aria-label="Close menu"
             >
               <X size={24} strokeWidth={2.5} />
@@ -145,7 +145,7 @@ export default function Navigation() {
                     <a
                       href={item.href}
                       onClick={closeMenu}
-                      className="block px-4 py-3 text-lg font-semibold text-navy-light hover:text-royal-blue hover:bg-gold/10 rounded-lg transition-colors"
+                      className="block px-4 py-3 text-lg font-semibold text-navy-light hover:text-gold hover:bg-gold/10 rounded-lg transition-colors"
                     >
                       {item.label}
                     </a>

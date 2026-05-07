@@ -39,7 +39,10 @@ export default function Testimonial() {
       aria-label="Témoignages clients"
     >
       {/* Décoration d'arrière-plan (Stylo) */}
-      <div className="absolute top-[-10%] right-[-5%] opacity-5 pointer-events-none rotate-12 transition-transform duration-1000">
+      <div
+        aria-hidden="true"
+        className="absolute top-[-10%] right-[-5%] opacity-5 pointer-events-none rotate-12 transition-transform duration-1000"
+      >
         <Image
           src="/stylo_placeholder.png"
           alt=""
@@ -82,7 +85,7 @@ export default function Testimonial() {
                   }`}
                 aria-hidden={index !== currentIndex}
               >
-                <p className="text-xl md:text-2xl font-serif italic leading-relaxed md:leading-relaxed text-blue-50 mb-8">
+                <p className="text-xl md:text-2xl font-serif italic leading-relaxed md:leading-relaxed text-cream mb-8">
                   &quot;{item.text}&quot;
                 </p>
 

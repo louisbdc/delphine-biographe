@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-cream: 253 251 247;
+  --color-cream-dark: 245 242 235;
+  --color-navy: 30 41 59;
+  --color-navy-light: 51 65 85;
+  --color-sage: 79 111 82;
+  --color-gold: 197 160 89;
+  --color-royal-blue: 65 105 225;
+}
+
 body {
-  background-color: #FDFBF7;
-  color: #1E293B;
+  background-color: rgb(var(--color-cream));
+  color: rgb(var(--color-navy));
   /* High contrast text */
 }
 
@@ -20,7 +30,7 @@ body {
 
 /* Focus states for accessibility */
 a:focus, button:focus {
-  outline: 3px solid #C5A059;
+  outline: 3px solid rgb(var(--color-gold));
   outline-offset: 2px;
 }
 
@@ -29,4 +39,3 @@ p {
   line-height: 1.8;
   font-size: 1.25rem; /* ~20px for excellent readability */
 }
-

@@ -91,7 +91,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-base-lg text-cream/80">
               <p className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-gold">location_on</span>
-                <span>Versailles et Paris</span>
+                <span>Région parisienne</span>
               </p>
               <p>
                 <a

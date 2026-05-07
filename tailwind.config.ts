@@ -9,14 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'cream': '#FDFBF7',
-        'cream-dark': '#F5F2EB',
-        'navy': '#1E293B',
-        'navy-light': '#334155',
-        'sage': '#4F6F52',
-        'gold': '#C5A059',
-        'old-rose': '#B76E79',
-        'royal-blue': '#4169E1',
+        'cream': 'rgb(var(--color-cream) / <alpha-value>)',
+        'cream-dark': 'rgb(var(--color-cream-dark) / <alpha-value>)',
+        'navy': 'rgb(var(--color-navy) / <alpha-value>)',
+        'navy-light': 'rgb(var(--color-navy-light) / <alpha-value>)',
+        'sage': 'rgb(var(--color-sage) / <alpha-value>)',
+        'gold': 'rgb(var(--color-gold) / <alpha-value>)',
+        'royal-blue': 'rgb(var(--color-royal-blue) / <alpha-value>)',
       },
       fontFamily: {
         serif: ['var(--font-playfair)', 'serif'],
