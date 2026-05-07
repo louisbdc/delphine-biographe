@@ -33,21 +33,21 @@ type Layout = {
 };
 
 const MOBILE_LAYOUT: Layout = {
-  width: 380,
-  height: 640,
-  minWidth: 280,
-  maxWidth: 480,
-  minHeight: 460,
-  maxHeight: 760,
+  width: 340,
+  height: 560,
+  minWidth: 260,
+  maxWidth: 420,
+  minHeight: 400,
+  maxHeight: 580,
 };
 
 const DESKTOP_LAYOUT: Layout = {
-  width: 580,
-  height: 820,
+  width: 520,
+  height: 740,
   minWidth: 320,
-  maxWidth: 600,
-  minHeight: 480,
-  maxHeight: 880,
+  maxWidth: 560,
+  minHeight: 440,
+  maxHeight: 760,
 };
 
 function getLayout(): Layout {
@@ -132,7 +132,7 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
 
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative w-[min(94vw,1200px)] h-[min(86vh,880px)] flex items-center justify-center"
+        className="relative w-full h-full max-w-[1080px] max-h-[780px] flex items-center justify-center"
       >
         <HTMLFlipBook
           key={`${layout.width}-${layout.height}`}
@@ -180,7 +180,10 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
 
           {excerpt.paragraphs.map((paragraph, index) => (
             <BookPage key={index} pageNumber={index + 1}>
-              <p className="font-serif text-navy text-lg md:text-xl leading-[1.7]">
+              <p
+                lang="fr"
+                className="font-serif text-navy text-lg md:text-xl leading-[1.7] text-justify hyphens-auto"
+              >
                 {paragraph}
               </p>
             </BookPage>
