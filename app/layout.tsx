@@ -3,7 +3,6 @@ import { Playfair_Display, Lato, Dancing_Script } from "next/font/google";
 import { MapPin } from "lucide-react";
 import "./globals.css";
 import AccessibilityControls from "@/components/AccessibilityControls";
-import ColorTweak from "@/components/ColorTweak";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -106,7 +105,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <ColorTweak />
         <Analytics />
       </body>
     </html>
