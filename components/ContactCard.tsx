@@ -60,7 +60,7 @@ export default function ContactCard({ className = "" }: ContactCardProps) {
                             <p className="flex items-center gap-3 text-gold text-xs font-bold tracking-widest uppercase mb-2">
                                 <MapPin className="w-4 h-4" /> Localisation
                             </p>
-                            <p className="text-white/90 font-light text-lg">Versailles & Paris, France</p>
+                            <p className="text-white/90 font-light text-lg">Région parisienne, France</p>
                             <p className="text-white/50 text-sm italic mt-1">Disponible pour voyager</p>
                         </div>
 
@@ -95,7 +95,7 @@ export default function ContactCard({ className = "" }: ContactCardProps) {
                         Envoyez-moi un message
                     </h2>
                     <p className="text-navy-light text-lg leading-relaxed max-w-2xl">
-                        Je navigue entre <strong className="text-navy font-medium">Versailles</strong> et <strong className="text-navy font-medium">Paris </strong>mais je peux me déplacer plus loin sur demande. N&apos;hésitez pas à me contacter pour une première discussion sans engagement.
+                        Je navigue dans la <strong className="text-navy font-medium">région parisienne </strong> mais je peux me déplacer plus loin sur demande. N&apos;hésitez pas à me contacter pour une première discussion sans engagement.
                     </p>
                 </div>
 
@@ -151,7 +151,7 @@ export default function ContactCard({ className = "" }: ContactCardProps) {
                                 ${status === 'success' ? 'bg-green-600 text-white shadow-green-600/20 w-full md:w-auto justify-center' : ''}
                                 ${status === 'error' ? 'bg-red-600 text-white shadow-red-600/20' : ''}
                                 ${status === 'loading' ? 'bg-navy/80 text-white cursor-wait' : ''}
-                                ${status === 'idle' ? 'bg-navy text-white hover:bg-gold hover:text-navy shadow-navy/20' : ''}
+                                ${status === 'idle' ? 'bg-navy text-white hover:bg-gold hover:text-black shadow-navy/20' : ''}
                             `}
                         >
                             {status === 'idle' && (

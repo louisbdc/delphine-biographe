@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Lato, Dancing_Script } from "next/font/google";
+import { MapPin } from "lucide-react";
 import "./globals.css";
 import AccessibilityControls from "@/components/AccessibilityControls";
 import ColorTweak from "@/components/ColorTweak";
@@ -95,7 +96,10 @@ export default function RootLayout({
       >
         {/* Accessibility & Top Bar */}
         <div className="bg-navy text-cream py-2 px-4 flex justify-between items-center text-sm md:text-base">
-          <span className="hidden lg:inline">📍 Basée près de Versailles, je me déplace dans toute la France</span>
+          <span className="hidden lg:inline-flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-red-500 fill-red-500" />
+            Basée en région parisienne, je me déplace dans toute la France
+          </span>
           <AccessibilityControls />
         </div>
         <main className="flex-1">

@@ -16,7 +16,7 @@ export default function Services() {
             className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2"
           >
             <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
-              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-white">
+              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-black">
                 face_4
               </span>
             </div>
@@ -36,7 +36,7 @@ export default function Services() {
             className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2"
           >
             <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
-              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-white">
+              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-black">
                 edit_note
               </span>
             </div>
@@ -56,7 +56,7 @@ export default function Services() {
             className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2"
           >
             <div className="bg-gold/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
-              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-white">
+              <span className="material-symbols-outlined text-4xl text-gold group-hover:text-black">
                 euro
               </span>
             </div>

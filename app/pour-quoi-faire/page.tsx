@@ -189,7 +189,7 @@ export default function PourQuoi() {
                 <div className="text-center md:text-left">
                   <a
                     href="/contact"
-                    className="inline-block bg-gold text-navy font-bold py-4 px-8 rounded-full hover:bg-white transition-colors duration-300 shadow-lg"
+                    className="inline-block bg-gold text-black font-bold py-4 px-8 rounded-full hover:bg-white transition-colors duration-300 shadow-lg"
                   >
                     Offrir ce cadeau
                   </a>

@@ -216,7 +216,7 @@ export default function Comment() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-gold text-navy text-xl font-bold py-4 px-8 rounded-lg hover:bg-gold/90 transition-colors shadow-lg"
+            className="inline-block bg-gold text-black text-xl font-bold py-4 px-8 rounded-lg hover:bg-gold/90 transition-colors shadow-lg"
           >
             Me contacter
           </a>

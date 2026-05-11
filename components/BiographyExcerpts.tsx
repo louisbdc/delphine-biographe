@@ -27,7 +27,7 @@ const EXCERPTS: Excerpt[] = [
   {
     id: "pelerinage",
     icon: "hiking",
-    title: "Un pèlerinage",
+    title: "Sur le chemin...",
     teaser:
       "[...] En septembre 2003, nous faisons le dernier tronçon français, jusqu'à Saint-Jean-Pied-de-Port. Nous marchons tous les deux mais ma femme trouve que je suis souvent bien loin devant elle et nous éprouvons quelques petites tensions. Nous vivons des moments très forts, nous découvrons et traversons des paysages splendides. Le chemin c'est aussi des rencontres improbables et marquantes…",
     paragraphs: [
@@ -92,7 +92,7 @@ export default function BiographyExcerpts() {
                   {excerpt.title}
                 </h3>
                 <div className="w-12 h-0.5 bg-gold/50 mb-5"></div>
-                <p className="text-navy-light italic leading-relaxed flex-1 mb-6">
+                <p lang="fr" className="text-navy-light italic leading-relaxed flex-1 mb-6 text-justify hyphens-auto">
                   {excerpt.teaser}
                 </p>
                 <span className="self-start text-gold font-semibold flex items-center gap-2 group-hover:gap-3 transition-all">

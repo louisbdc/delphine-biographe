@@ -227,7 +227,7 @@ export default function QuiSuisJe() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-gold text-navy text-xl font-bold py-4 px-10 rounded-full hover:bg-navy hover:text-white transition-all duration-300 shadow-xl hover:shadow-gold/20"
+            className="inline-block bg-gold text-black text-xl font-bold py-4 px-10 rounded-full hover:bg-navy hover:text-white transition-all duration-300 shadow-xl hover:shadow-gold/20"
           >
             Me contacter
           </a>

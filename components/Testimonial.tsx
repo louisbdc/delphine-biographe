@@ -107,7 +107,7 @@ export default function Testimonial() {
             {/* Bouton Précédent */}
             <button
               onClick={prevSlide}
-              className="pointer-events-auto w-12 h-12 rounded-full bg-navy/80 hover:bg-gold text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold"
+              className="pointer-events-auto w-12 h-12 rounded-full bg-navy/80 hover:bg-gold text-white hover:text-black border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold"
               aria-label="Témoignage précédent"
               title="Précédent"
             >
@@ -117,7 +117,7 @@ export default function Testimonial() {
             {/* Bouton Suivant */}
             <button
               onClick={nextSlide}
-              className="pointer-events-auto w-12 h-12 rounded-full bg-navy/80 hover:bg-gold text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold"
+              className="pointer-events-auto w-12 h-12 rounded-full bg-navy/80 hover:bg-gold text-white hover:text-black border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-gold"
               aria-label="Témoignage suivant"
               title="Suivant"
             >

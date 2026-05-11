@@ -174,7 +174,7 @@ export default function Combien() {
                 <ul className="text-left space-y-3 mb-8 px-4">
                   <li className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-gold">timer</span>
-                    <span>Un entretien = 8h (1h d&apos;entretien + 7h de travail)</span>
+                    <span>Une séance = 8h (1h d&apos;entretien + 7h de travail)</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="material-symbols-outlined text-gold">payments</span>
@@ -218,7 +218,7 @@ export default function Combien() {
               <p className="text-sm text-gray-400 mb-2">Estimé sur 10 séances</p>
 
               <div className="mt-auto pt-5 mt-3 border-t border-gold/20 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
-                <span className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-navy text-white font-semibold group-hover:bg-gold group-hover:text-navy transition-colors">
+                <span className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-navy text-white font-semibold group-hover:bg-gold group-hover:text-black transition-colors">
                   Me contacter
                   <span className="material-symbols-outlined text-base">arrow_forward</span>
                 </span>
@@ -241,7 +241,7 @@ export default function Combien() {
               <p className="text-sm text-gray-400 mb-2">Estimé entre 15 et 20 séances</p>
 
               <div className="mt-auto pt-5 mt-3 border-t border-gold/20 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
-                <span className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-navy text-white font-semibold group-hover:bg-gold group-hover:text-navy transition-colors">
+                <span className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-full bg-navy text-white font-semibold group-hover:bg-gold group-hover:text-black transition-colors">
                   Me contacter
                   <span className="material-symbols-outlined text-base">arrow_forward</span>
                 </span>
@@ -299,7 +299,7 @@ export default function Combien() {
               <div>
                 <h3 className="text-xl font-serif text-navy mb-3 font-bold">Déplacements</h3>
                 <p className="text-navy-light leading-relaxed mb-4">
-                  Basée près de <strong>Versailles</strong>, je me déplace dans toute la France.
+                  Basée dans le <strong>78</strong>, je me déplace dans toute la France.
                 </p>
                 <p className="text-navy-light leading-relaxed">
                   Si vous résidez en dehors de la région parisienne, les frais de transport (train/voiture) et éventuellement d&apos;hébergement seront à votre charge. Nous pouvons aussi alterner avec des séances en visio pour réduire ces coûts.
@@ -325,7 +325,7 @@ export default function Combien() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="bg-gold text-navy px-8 py-4 rounded-full font-bold hover:bg-white transition-all duration-300 shadow-lg hover:shadow-gold/20"
+              className="bg-gold text-black px-8 py-4 rounded-full font-bold hover:bg-white transition-all duration-300 shadow-lg hover:shadow-gold/20"
             >
               Me contacter
             </a>

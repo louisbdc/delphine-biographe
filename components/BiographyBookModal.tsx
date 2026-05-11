@@ -115,7 +115,7 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-[200] bg-navy/85 backdrop-blur-sm flex items-center justify-center p-4 md:p-8"
+      className="fixed inset-0 z-[200] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 md:p-8"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -124,7 +124,7 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
       <button
         type="button"
         onClick={onClose}
-        className="fixed top-4 right-4 md:top-6 md:right-6 z-[210] h-12 w-12 rounded-full bg-white text-navy shadow-lg hover:bg-cream flex items-center justify-center transition-colors"
+        className="fixed top-4 right-4 md:top-6 md:right-6 z-[210] h-12 w-12 rounded-full bg-white text-black shadow-lg hover:bg-cream flex items-center justify-center transition-colors"
         aria-label="Fermer l'extrait"
       >
         <span className="material-symbols-outlined">close</span>
@@ -165,14 +165,14 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
               <span className="material-symbols-outlined text-gold text-5xl mb-4 block">
                 menu_book
               </span>
-              <p className="text-xs uppercase tracking-[0.2em] text-navy-light mb-4">
+              <p className="text-xs uppercase tracking-[0.2em] text-black/70 mb-4">
                 Extrait de biographie
               </p>
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-navy mb-6 leading-tight">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-black mb-6 leading-tight">
                 {excerpt.title}
               </h2>
               <div className="w-16 h-0.5 bg-gold/50 mx-auto mb-6"></div>
-              <p className="text-sm italic text-navy-light">
+              <p className="text-sm italic text-black/70">
                 Tournez la page →
               </p>
             </div>
@@ -182,7 +182,7 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
             <BookPage key={index} pageNumber={index + 1}>
               <p
                 lang="fr"
-                className="font-serif text-navy text-lg md:text-xl leading-[1.7] text-justify hyphens-auto"
+                className="font-serif text-black text-lg md:text-xl leading-[1.7] text-justify hyphens-auto"
               >
                 {paragraph}
               </p>
@@ -194,14 +194,14 @@ export default function BiographyBookModal({ excerpt, onClose }: Props) {
               <span className="material-symbols-outlined text-gold text-5xl mb-4 block">
                 edit_note
               </span>
-              <p className="text-lg font-serif italic text-navy mb-6">
+              <p className="text-lg font-serif italic text-black mb-6">
                 Fin de l&apos;extrait.
               </p>
               <div className="w-12 h-0.5 bg-gold/50 mx-auto mb-6"></div>
-              <p className="text-sm text-navy-light leading-relaxed">
+              <p className="text-sm text-black/70 leading-relaxed">
                 Chaque biographie est unique,
                 <br />
-                comme les vies qu&apos;elles racontent.
+                comme la vie qu&apos;elle raconte.
               </p>
             </div>
           </BookPage>

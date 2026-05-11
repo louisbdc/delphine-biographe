@@ -16,7 +16,7 @@ type ColorMap = Record<ColorKey, string>;
 const DEFAULT_COLORS: ColorMap = {
   "cream": "#FDFBF7",
   "cream-dark": "#F5F2EB",
-  "navy": "#1E293B",
+  "navy": "#3F8B8D",
   "navy-light": "#334155",
   "sage": "#4F6F52",
   "gold": "#C5A059",

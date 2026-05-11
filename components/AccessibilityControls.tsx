@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 
 export default function AccessibilityControls() {
-  // On démarre à 100% (1) par défaut
-  const [currentZoom, setCurrentZoom] = useState(1);
+  // On démarre à 110% (1.1) par défaut (équivalent à un A+ depuis 100%)
+  const [currentZoom, setCurrentZoom] = useState(1.1);
   const [mounted, setMounted] = useState(false);
 
   // Au chargement de la page (côté client uniquement)
@@ -18,7 +18,7 @@ export default function AccessibilityControls() {
       applyZoom(zoomValue);
     } else {
       // Si aucune préférence, on applique la valeur par défaut
-      applyZoom(1);
+      applyZoom(1.1);
     }
   }, []);
 
@@ -53,7 +53,7 @@ export default function AccessibilityControls() {
   };
 
   const resetText = () => {
-    handleZoomChange(1); // Retour à 100%
+    handleZoomChange(1.1); // Retour à la valeur par défaut (110%)
   };
 
   // Pour éviter les erreurs d'hydratation (différence serveur/client),
